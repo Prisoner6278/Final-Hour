@@ -1,0 +1,26 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#elidaytwo;Ah ha! The spy Is finally awake!;~;~
+~;~;#elidaytwo;I bet we left a good bump on your head from our trusty flashlight!;~;~
+~;~;#elidaytwo;What? What do you mean the world was supposed to end?;~;~
+~;~;#elidaytwo;(I know we can't trust him, let me handle this.);~;~
+~;~;#elidaytwo;Stop asking questions! We'll be the ones doing the talking!;~;~
+~;~;#elidaytwo;So you thought you could catch us huh? You really thought It would be that easy?;~;~
+~;~;#elidaytwo;(Shut up, shut up! Stop bothering me!);~;~
+~;~;#elidaytwo;Flake really has reached rock bottom now that he's got kids doing his dirty work.;~;~
+~;~;#elidaytwo;First he was dumping his toxic waste into the sea, and now he plans to tear down the forest to open a factory?!;~;~
+~;~;#elidaytwo;(He has no regard for life! The spawn of the devil!);~;~
+~;~;#elidaytwo;You're just a kid, so you don't understand the consequences that will occur if his plan succeeds.;~;~
+~;~;#elidaytwo;Wait he didn't tell you about that? So you're not even working for him?;~;~
+~;~;#elidaytwo;Well if that's the case, sorry for knocking your lights out. But we're not so sure we believe you.;~;~
+~;~;#elidaytwo;(Maybe this could work out in our favor, this kid could help us.);~;~
+~;~;#elidaytwo;Now that you know what Flake is really up to, you understand why we need to end this.;~;~
+~;~;#elidaytwo;Prove you're on our side by helping us take him down. ;~;~
+~;~;#elidaytwo;We have to stay hidden, but you don't. Get us something to use against him. ;~;~
+~;#bug_spray;#eli_bug_spray;Bug spray? ;~;#terminixer #eli_repeat #graveyard_key
+~;~;#eli_bug_spray;Interesting... But it'll work. ;~;~
+~;~;#eli_bug_spray;(I know! This is gonna make him suffer!);~;~
+~;~;#eli_bug_spray;One more thing, go tell the gravekeeper, dig a hole for one. Maybe two more for those shitheads who follow him around.;~;~
+~;~;#eli_bug_spray;Here's the key to the graveyard gate. We stole it when we ran away.;~;~
+~;~;#eli_repeat;We'll be here. Come find us when you have something we can use.;#bug_spray;~
+~;~;#eli_repeat;(We have a fighting chance now!);~;~
+~;~;#eli_bug_spray_repeat;Your job here is done, we appreciate your efforts. Now leave the rest to us.;~;~

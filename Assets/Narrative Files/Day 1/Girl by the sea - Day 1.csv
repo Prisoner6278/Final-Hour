@@ -1,0 +1,12 @@
+﻿Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement;Triggers
+~;~;#girl_first;…...;~;~
+~;~;#girl_sea;……;~;~
+~;~;#girl_sea;Are you here to behold the sea too?;~;~
+~;~;#girl_sea;By tomorrow, nothing will exist here. ;~;~
+~;~;#girl_sea;Everything that happened before, it will be undone. ;~;~
+~;~;#girl_sea;There will be nothing left.;~;~
+~;~;#girl_sea;Soon all of us are going to turn into dust and disappear.;~;~
+~;~;#girl_sea;… Maybe this is all God's plan.;~;~
+~;~;#girl_sea;What choice do we have? I guess sometimes we just need to accept things.;~;~
+~;~;#girl_repeat;…;~;~
+~;~;#girl_repeat;I wonder why this is the fate we have been given?;~;~

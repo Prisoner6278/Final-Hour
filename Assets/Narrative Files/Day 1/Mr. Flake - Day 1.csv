@@ -1,0 +1,25 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#mrflake;Hello, welcome to my store. What brings you here?;~;~
+~;~;#mrflake;Oh you came across my associates? ;~;~
+~;~;#mrflake;Well I guess I don't have to introduce myself, I hope my associates didn't give you any trouble.;~;~
+~;~;#mrflake;They can be intimidating. But I assure you, they didn't mean any harm.;~;~
+~;~;#mrflake;Anyways, if there's anything I can help you find, it would be my pleasure.;~;~
+~;~;#mrflake;This end of the world shit is making me a fortune! These people will believe anything they see on the news.;~;~
+~;~;#mrflake;Sadly we've lost an employee recently, so we're a bit shortstaffed. They'll be back soon.;~;~
+~;~;#mrflake;But we shall see about that. ;~;~
+~;#boot;#mrflake_boot;Ah, you brought me something? Show me, we've wasted enough time.;~;#detective #mrflakeEli #mrflakecheck
+~;~;#mrflake_boot;Aha! Yes!! This boot is part of my employees' uniform.;~;~
+~;~;#mrflake_boot;You say it was in the middle of the woods? Excellent, well done kid.;~;~
+~;~;#mrflake_boot;It seems like you can be trusted, so about that reward . . .;~;~
+~;~;#mrflake_boot;I own the south beach, it's private and relatively quiet. Go there, enjoy your final hours if you believe in that nonsense.;~;~
+~;~;#mrflake_boot;Now that we know Eli's last location the real work begins.;~;~
+~;~;#mrflakeEli;So, my associates told you about Eli did they?;~;~
+~;~;#mrflakeEli;They told you that he uh, stole something from us, yes?;~;~
+~;~;#mrflakeEli;This... incident, happened some time ago and we are still looking for him.;~;~
+~;~;#mrflakeEli;I lost something important because of him... you don't need to know the details.;~;~
+~;~;#mrflakeEli;If he comes back soon he'll be spared. Maybe.;~;~
+~;~;#mrflakeEli;Help me find a clue to his whereabouts and there will be a reward in it for you, my friend.;~;~
+~;~;#mrflakeEli;But if you learn where he is and don't tell me, you'll suffer the same fate as him.;~;~
+~;~;#mrflakecheck;If you find any clues about Eli, bring them to me immediately.;#detective;~
+~;~;#mrflakecheck;If our lives are really going to end tonight, I want his to be cut short.;~;~
+~;~;#mrflake_repeat;Barry and Jerry are on the case, they'll be combing the woods day and night until Eli is found.;~;~

@@ -1,0 +1,7 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#meri_intro;Oh hello dear. What's your name?;~;~
+~;~;#meri_intro;My name is Meri. You're from the orphanage aren't you?;~;~
+~;~;#meri_intro;I've always felt so sorry for you kids, especially knowing the condition of that building.;~;~
+~;~;#meri_intro;Children are such a blessing. I wish I would've had more time with mine...;~;~
+~;~;#meri_repeat;If you need anything, just come and find me okay?;~;~
+~;~;#meri_repeat;I live near the beach, close to the dock.;~;~

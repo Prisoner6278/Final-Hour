@@ -1,0 +1,19 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#james_intro;Ugh. What am I going to do?!;~;~
+~;~;#james_intro;The world is ending today and I still haven't confessed my love to Lily!;~;~
+~;~;#james_intro;I should be telling her how I really feel right now . . .;~;~
+~;~;#james_intro;But I can't just go over to her empty handed!;~;~
+~;~;#james_intro;You gotta help me, please! Could you find me some roses or something?;~;~
+~;~;#james_intro;There has to be some nice ones up north of the town.;~;~
+~;~;#james_intro;I would go there myself but I need figure to out what I'm going to say.;~;~
+~;~;#james_intro;I should write a note . . . love from James . . .;~;~
+~;#roses;#roses_retrieved;You found them!;~;#romeo_and_juliet #roses #james_sad
+~;~;#roses_retrieved;I really owe you one.;~;~
+~;~;#roses_retrieved;. . . Not like it will matter after today.;~;~
+~;~;#roses_retrieved;Anyways, thanks man you really did me a huge favor here.;~;~
+~;~;#roses_retrieved;I'm finally prepared to confess my love to her.;~;~
+~;~;#james_sad;Is it even worth telling Lily how I feel with only a day left on Earth?;#romeo_and_juliet;~
+~;~;#james_sad;On the other hand, what's the worst thing that could happen?;~;~
+~;~;#james_sad;You're right! The worst thing is already happening!;~;~
+~;~;#james_sad;That settles it. Once you find some roses and I write out my thoughts, I'll go find her.;~;~
+~;~;#james_repeat;Wish me luck man!;~;~

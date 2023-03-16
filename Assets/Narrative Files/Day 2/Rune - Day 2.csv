@@ -1,0 +1,10 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#rune_intro;Not many people come up to this side of town.;~;~
+~;~;#rune_intro;Eli sent you? Haven't heard that name in a while . . .;~;~
+~;~;#rune_intro;Sorry, I got my hands full.;~;~
+~;~;#rune_intro;Got the news this morning. Looks like it's three graves today, two kids and their caretaker.;~;~
+~;~;#rune_intro;I gotta get to work, but I lost my shovel. ;~;~
+~;#shovel;#rune_after_shovel;Oh . . . you have my shovel . . .;~;#keeper_of_the_dead #rune_need_shovel
+~;~;#rune_after_shovel;Guess my day off is ending early.;~;~
+~;~;#rune_need_shovel;Gravedigging is hard on the psyche. Without a shovel I guess I don't need to put myself through it for now.;#shovel;~
+~;~;#rune_repeat;This job doesn't get any easier with age. ;~;~

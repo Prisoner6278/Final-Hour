@@ -1,0 +1,9 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement;Triggers
+~;~;#andy;Hey, where you going?;~;~
+~;~;#andy;You're leaving? But what about Ms. Karen's sermon later? ;~;~
+~;~;#andy;She'll be mad if you don't do what you're told . . .;~;~
+~;~;#andy;You really are determined to leave, huh?;~;~
+~;~;#andy;As long as you're back before the sermon starts, I guess you'll be fine.;~;~
+~;~;#andy_repeat;You should take your watch with you when you go. Just be back before the sermon.;#watch;~
+~;~;#andy_repeat;She said it'll be at 9:30. We'll all have to clean the floors again if you get in trouble!;~;~
+~;#watch;#after_watch;Be sure to come back, alright.;~;~
