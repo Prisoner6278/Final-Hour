@@ -1,37 +1,5 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4126891834812613264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4126891834812613271}
-  m_Layer: 0
-  m_Name: GraphicsParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4126891834812613271
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4126891834812613264}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4126891835802565990}
-  m_Father: {fileID: 4126891835233877711}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4126891835233877705
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4126891834812613271}
+  - {fileID: 4126891835802565990}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -79,10 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89ec1e6f79aebd428a35423bf68325d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: TV Anchor
   dialogueCSV: {fileID: 4900000, guid: 8d15cc498742bb24b8cde5fc083e7af7, type: 3}
   talkSpeed: 70
   voiceSoundName: DialogueSoundNormal
-  portraitAnimatorPath: Character_Portrait_Animations/TVAnchorPortrait
+  portraitAnimatorPath: CharacterPortraitAnimations/TVAnchorPortrait
   conversations: []
 --- !u!58 &2230882934210648263
 CircleCollider2D:
@@ -97,7 +66,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.6}
+  m_Offset: {x: 0, y: -0.3}
   serializedVersion: 2
   m_Radius: 0.32
 --- !u!95 &3542084550082943040
@@ -132,7 +101,7 @@ GameObject:
   - component: {fileID: 4126891835802565989}
   m_Layer: 0
   m_Name: Graphics
-  m_TagString: Untagged
+  m_TagString: SpriteSortProp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -145,11 +114,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4126891835802565991}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.36, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 4126891834812613271}
+  m_Father: {fileID: 4126891835233877711}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4126891835802565989
@@ -190,8 +159,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1517391527
+  m_SortingLayer: 2
   m_SortingOrder: 1
   m_Sprite: {fileID: 1229549309, guid: e1357686e5b9f1e4bb3b110777ce694f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}

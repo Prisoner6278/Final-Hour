@@ -6,6 +6,7 @@ using UnityEditor;
 
 public class NPCDialogueManager : MonoBehaviour
 {
+    public string characterName;
     public TextAsset dialogueCSV;
     public float talkSpeed = 70f;
     public string voiceSoundName = "DialogueSoundNormal";
@@ -22,6 +23,7 @@ public class NPCDialogueManager : MonoBehaviour
 
         foreach (DialogueConversation convo in conversations)
         {
+            convo.SetCharacterName(characterName);
             convo.SetTalkSpeed(talkSpeed);
             convo.SetVoiceSoundName(voiceSoundName);
         }
@@ -136,6 +138,7 @@ public class DialogueConversation
     [SerializeField]
     private string[] dialogueLines;
     [SerializeField]
+    private string characterName;
     private float talkSpeed;
     private string voiceSoundName;
 
@@ -201,4 +204,11 @@ public class DialogueConversation
     }
 
     public string GetVoiceSoundName() => voiceSoundName;
+
+    public void SetCharacterName(string charName)
+    {
+        characterName = charName;
+    }
+
+    public string GetCharacterName() => characterName;
 }

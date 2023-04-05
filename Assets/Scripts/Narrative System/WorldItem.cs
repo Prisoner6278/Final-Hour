@@ -14,6 +14,7 @@ public class WorldItem : MonoBehaviour
     private void Start()
     {
         pickupConvo = new DialogueConversation();
+        pickupConvo.SetCharacterName("Item");
         pickupConvo.SetTalkSpeed(worldItemTalkSpeed);
         pickupConvo.SetVoiceSoundName(voiceSoundName);
         pickupConvo.SetDialogueLines( new string[] { pickupText });

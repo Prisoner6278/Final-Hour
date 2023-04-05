@@ -8,14 +8,6 @@ public class ScreenAudio : MonoBehaviour
     public string music;
     private static GameObject activeScreen;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // initial sound schedules for the screen
-        foreach (BackgroundSound sound in backgroundSounds)
-            sound.SchedulePlay(Time.time);
-    }
-
     // Update is called once per frame
     void Update()
     {
@@ -31,7 +23,12 @@ public class ScreenAudio : MonoBehaviour
     {
         Debug.Log(gameObject.name + " set to active screen");
         activeScreen = gameObject;
-        AudioManager.Instance().SetMusicTrack(music);
+
+        // initial sound schedules for the screen
+        foreach (BackgroundSound sound in backgroundSounds)
+            sound.SchedulePlay(Time.time);
+
+        AudioManager.Instance().TransitionAudio(music);
     }
 }
 

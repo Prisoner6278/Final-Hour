@@ -2,12 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 public class ItemManager : MonoBehaviour
 {
     public TextAsset itemListCSV;
     [SerializeField]
     private Item[] itemList;
+    private InventoryItems inventoryUI;
+
+    public UnityEvent ItemActionStart;
+    public UnityEvent ItemActionEnd;
 
     // singleton
     private static ItemManager instance;
@@ -18,6 +23,10 @@ public class ItemManager : MonoBehaviour
         if (instance != null && instance != this)
             Destroy(this);
         instance = this;
+
+        inventoryUI = GameObject.Find("InventoryCanvas").transform.Find("Items").GetComponent<InventoryItems>();
+        if (inventoryUI == null)
+            throw new Exception("Searched for Inventory Canvas Items child and couldn't find it in the scene.\n");
     }
 
     public static ItemManager Instance()
@@ -47,8 +56,30 @@ public class ItemManager : MonoBehaviour
             Debug.Log("searched for " + itemName);
             throw new Exception("Searched item list for non-existant item! Did you make a typo somewhere?\n");
         }
+        bool taking = !i.GetHolding();
+        i.SetHolding(taking); // if holding, take. if not holding, give
 
-        i.SetHolding(!i.GetHolding()); // if holding, take. if not holding, give
+        StartCoroutine(InventoryUpdate(taking, itemName));
+    }
+
+    // update inventory UI
+    private IEnumerator InventoryUpdate(bool taking, string itemName)
+    {
+        // open inventory UI
+        ItemActionEnd.RemoveAllListeners(); // reset
+        ItemActionStart.Invoke();
+
+        yield return new WaitForSeconds(0.4f);
+
+        // add or remove item
+        if (taking)
+            inventoryUI.AddItem(itemName);
+        else
+            inventoryUI.RemoveItem(itemName);
+
+        yield return new WaitForSeconds(0.7f);
+
+        ItemActionEnd.Invoke();
     }
 }
 

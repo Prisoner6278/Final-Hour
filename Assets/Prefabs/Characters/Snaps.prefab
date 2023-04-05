@@ -31,7 +31,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 8000794702988697416}
+  - {fileID: 8000794701831086265}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -47,10 +47,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89ec1e6f79aebd428a35423bf68325d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: Snaps
   dialogueCSV: {fileID: 4900000, guid: f4481acf8392fb34aa3e0baedf229301, type: 3}
   talkSpeed: 70
   voiceSoundName: DialogueSoundSuperDeep
-  portraitAnimatorPath: Character_Portrait_Animations/SnapsPortrait
+  portraitAnimatorPath: CharacterPortraitAnimations/SnapsPortrait
   conversations: []
 --- !u!58 &6376932228636073394
 CircleCollider2D:
@@ -65,7 +66,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.69}
+  m_Offset: {x: 0, y: -0.25}
   serializedVersion: 2
   m_Radius: 0.71
 --- !u!95 &2674451569707987840
@@ -100,7 +101,7 @@ GameObject:
   - component: {fileID: 8000794701831086266}
   m_Layer: 0
   m_Name: Graphics
-  m_TagString: Untagged
+  m_TagString: SpriteSortProp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -113,11 +114,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8000794701831086264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.39, z: 0}
+  m_LocalPosition: {x: 0, y: 0.56, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 8000794702988697416}
+  m_Father: {fileID: 8000794701262463760}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &8000794701831086266
@@ -158,8 +159,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1517391527
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: 72613612, guid: 778ef10a68cfa5b4d8de25bfdbd6c752, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -172,35 +173,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &8000794702988697423
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 8000794702988697416}
-  m_Layer: 0
-  m_Name: GraphicsParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &8000794702988697416
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8000794702988697423}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.39, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 8000794701831086265}
-  m_Father: {fileID: 8000794701262463760}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -9,7 +9,8 @@ using UnityEditor;
 public class DialogueDisplay : MonoBehaviour
 {
     public GameObject background;
-    public TMP_Text text;
+    public TMP_Text dialogueText;
+    public TMP_Text nameText;
 
     bool active;
     int lineIndex;
@@ -48,7 +49,7 @@ public class DialogueDisplay : MonoBehaviour
         currentConvo = null;
 
         background.SetActive(false);
-        text.gameObject.SetActive(false);
+        dialogueText.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -59,17 +60,17 @@ public class DialogueDisplay : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
             {
                 if (typing)
-                    counter = text.textInfo.characterCount - 1;
+                    counter = dialogueText.textInfo.characterCount - 1;
                 else
                     ShowNextLine();
             }
-                
+
 
             if (!typing)
                 return;
 
-            text.ForceMeshUpdate();
-            mesh = text.mesh;
+            dialogueText.ForceMeshUpdate();
+            mesh = dialogueText.mesh;
             vertices = mesh.vertices;
 
             Color[] colors = mesh.colors;
@@ -77,7 +78,7 @@ public class DialogueDisplay : MonoBehaviour
             // keep already typed characters black
             for (int i = 0; i < counter; i++)
             {
-                TMP_CharacterInfo completedChar = text.textInfo.characterInfo[i];
+                TMP_CharacterInfo completedChar = dialogueText.textInfo.characterInfo[i];
 
                 int completedCharIndex = completedChar.vertexIndex;
                 colors[completedCharIndex] = Color.black;
@@ -87,13 +88,13 @@ public class DialogueDisplay : MonoBehaviour
             }
 
             // lerp in current character
-            if (text.textInfo.characterInfo[counter].isVisible)
+            if (dialogueText.textInfo.characterInfo[counter].isVisible)
             {
                 xTracker -= Time.deltaTime * currentConvo.GetTalkSpeed();
                 float lerpProgress = xTracker / shiftDistance;
 
                 Vector3 offset = new Vector3(Mathf.Lerp(0, shiftDistance, lerpProgress), 0f, 0f);
-                int index = text.textInfo.characterInfo[counter].vertexIndex;
+                int index = dialogueText.textInfo.characterInfo[counter].vertexIndex;
 
                 // slide character over
                 vertices[index] += offset;
@@ -109,8 +110,9 @@ public class DialogueDisplay : MonoBehaviour
 
                 if (xTracker <= 0)
                 {
-                    AudioManager.Instance().PlaySound(currentConvo.GetVoiceSoundName());
                     NextCharacter();
+                    if (counter % 2 == 0)
+                        AudioManager.Instance().PlaySound(currentConvo.GetVoiceSoundName());
                 }
             }
             else
@@ -118,7 +120,7 @@ public class DialogueDisplay : MonoBehaviour
 
             mesh.vertices = vertices;
             mesh.colors = colors;
-            text.canvasRenderer.SetMesh(mesh);
+            dialogueText.canvasRenderer.SetMesh(mesh);
         }
     }
 
@@ -127,13 +129,23 @@ public class DialogueDisplay : MonoBehaviour
         active = true;
         lineIndex = 0;
         currentConvo = convo;
+        //if (convo.GetCharacterName() == "")
+            // switch to item UI
+        nameText.text = convo.GetCharacterName();
         RuntimeAnimatorController animController = Resources.Load(portraitAnimatorPath) as RuntimeAnimatorController;
         if (animController == null)
             Debug.Log("NO ANIMATOR FOUND");
         GetComponent<Animator>().runtimeAnimatorController = animController;
         GetComponent<Animator>().SetBool("play", true);
         background.gameObject.SetActive(true);
-        text.gameObject.SetActive(true);
+        background.GetComponent<Animator>().SetBool("open", true);
+        StartCoroutine(BeginText());
+    }
+
+    private IEnumerator BeginText()
+    {
+        yield return new WaitForSeconds(0.5f);
+        dialogueText.gameObject.SetActive(true);
         ShowNextLine();
     }
 
@@ -148,15 +160,15 @@ public class DialogueDisplay : MonoBehaviour
 
         typing = true;
         counter = 0;
-        text.color = Color.clear; // need this?
-        text.text = currentConvo.GetDialogueLines()[lineIndex];
+        dialogueText.color = Color.clear; // need this?
+        dialogueText.text = currentConvo.GetDialogueLines()[lineIndex];
         lineIndex++;
     }
 
     private void NextCharacter()
     {
         counter++;
-        if (counter >= text.textInfo.characterCount)
+        if (counter >= dialogueText.textInfo.characterCount)
             typing = false;
         else
             xTracker = shiftDistance;
@@ -164,8 +176,15 @@ public class DialogueDisplay : MonoBehaviour
 
     private void CloseDisplay()
     {
-        background.gameObject.SetActive(false);
-        text.gameObject.SetActive(false);
+        background.GetComponent<Animator>().SetBool("open", false);
+        dialogueText.gameObject.SetActive(false);
         active = false;
+        StartCoroutine(DelayedClose());
+    }
+
+    private IEnumerator DelayedClose()
+    {
+        yield return new WaitForSeconds(0.4f);
+        background.gameObject.SetActive(false);
     }
 }

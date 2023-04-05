@@ -15,9 +15,12 @@ public class AudioManager : MonoBehaviour
     private static AudioManager instance;
 
     // music fade
-    bool fadingIn;
-    bool fadingout;
+    bool musicFadingIn;
+    bool soundsFadingIn;
+    bool musicFadingout;
+    bool soundsFadingout;
     Music queuedClip;
+    float fadeCounter;
     public UnityEvent OnFadeCompletion;
 
     private void Awake()
@@ -28,7 +31,13 @@ public class AudioManager : MonoBehaviour
         instance = this;
 
         musicSource = gameObject.AddComponent<AudioSource>();
+        musicSource.volume = 0.0f;
         musicSource.loop = true;
+
+        musicFadingIn = false;
+        musicFadingout = false;
+        fadeCounter = 0.0f;
+        sources = new List<AudioSource>();
     }
 
     public static AudioManager Instance()
@@ -36,39 +45,66 @@ public class AudioManager : MonoBehaviour
         return instance;
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        fadingIn = false;
-        fadingout = false;
-        sources = new List<AudioSource>();
-    }
-
     private void Update()
     {
-        // music fade in / out
-        if (fadingIn)
+        // sounds fade in / out
+        if (soundsFadingIn)
         {
-            musicSource.volume += Time.deltaTime / 2.0f;
-            if (musicSource.volume >= 1.0f)
+            fadeCounter += Time.deltaTime / 2.0f;
+            foreach (AudioSource src in sources)
+                src.volume += Time.deltaTime;
+
+            if (fadeCounter >= 1.0f)
             {
-                fadingIn = false;
+                soundsFadingIn = false;
+            }
+        }
+        else if (soundsFadingout)
+        {
+            fadeCounter -= Time.deltaTime;
+
+            foreach (AudioSource src in sources)
+                src.volume -= Time.deltaTime;
+
+            if (fadeCounter <= 0.0f)
+            {
+                for (int i = 0; i < sources.Count; i++)
+                {
+                    AudioSource src = sources[i];
+                    src.Stop();
+                    sources.Remove(src);
+                    Destroy(src);
+                }
+                soundsFadingIn = true;
+                soundsFadingout = false;
             }
         }
 
-        if (fadingout)
+        // music fade in / out
+        if (musicFadingIn)
+        {
+            musicSource.volume += Time.deltaTime / 2.0f;
+            if (fadeCounter >= 1.0f)
+                musicFadingIn = false;
+        }
+        else if (musicFadingout)
         {
             musicSource.volume -= Time.deltaTime;
-            if (musicSource.volume <= 0.0f)
+
+
+            if (fadeCounter <= 0.0f)
             {
+                musicSource.clip = null;
                 OnFadeCompletion.Invoke();
-                fadingout = false;
+                musicFadingout = false;
             }
         }
     }
 
-    public void SetMusicTrack(string musicClipName)
+    public void TransitionAudio(string musicClipName)
     {
+        SoundsFadeOut();
+
         // no music on this screen
         if (musicClipName == "")
         {
@@ -100,17 +136,34 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.clip = queuedClip.clip;
         musicSource.Play();
-        fadingIn = true;
+        musicFadingIn = true;
         OnFadeCompletion.RemoveListener(MusicFadeIn);
     }
 
     private void MusicFadeOut()
     {
-        fadingout = true;
+        musicFadingout = true;
     }
+
+    private void SoundsFadeIn()
+    {
+        fadeCounter = 0.0f;
+        soundsFadingIn = true;
+    }
+
+    private void SoundsFadeOut()
+    {
+        fadeCounter = 1.0f;
+        soundsFadingout = true;
+    }
+
 
     public void PlaySound(string soundName)
     {
+        //// don't play the sound if we're in the middle of a transition
+        //if (fadeCounter < 1.0f)
+        //    return;
+
         AudioSource selectedSource = null;
 
         // search existing sources for a free one

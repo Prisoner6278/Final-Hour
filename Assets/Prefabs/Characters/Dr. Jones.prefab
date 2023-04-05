@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4021282429137932939}
   m_Layer: 0
   m_Name: Graphics
-  m_TagString: Untagged
+  m_TagString: SpriteSortProp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24,12 +24,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2111010922708830384}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.41, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 7052898621285203424}
+  m_Father: {fileID: 1896682991031196303}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &4021282429137932939
@@ -70,8 +70,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -1517391527
+  m_SortingLayer: 2
   m_SortingOrder: 0
   m_Sprite: {fileID: -1451875495, guid: 0cade912cbb134c4bbd913dc8c170c5b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -84,38 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2433124898833951392
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 7052898621285203424}
-  m_Layer: 0
-  m_Name: GraphicsParent
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &7052898621285203424
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2433124898833951392}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 4500231056725382757}
-  m_Father: {fileID: 1896682991031196303}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &7502477257842242540
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,7 +116,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7052898621285203424}
+  - {fileID: 4500231056725382757}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -164,10 +132,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d89ec1e6f79aebd428a35423bf68325d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  characterName: Dr. Jones
   dialogueCSV: {fileID: 4900000, guid: 34698fdc5cfa2274d94235981bb60c07, type: 3}
   talkSpeed: 70
-  voiceSoundName: DialogueSoundMediumHigh
-  portraitAnimatorPath: Character_Portrait_Animations/JonesPortrait
+  voiceSoundName: DialogueSoundMedium
+  portraitAnimatorPath: CharacterPortraitAnimations/JonesPortrait
   conversations: []
 --- !u!58 &2189811818672389585
 CircleCollider2D:
@@ -182,9 +151,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.42}
+  m_Offset: {x: 0, y: -0.12}
   serializedVersion: 2
-  m_Radius: 0.47
+  m_Radius: 0.41
 --- !u!95 &5772643402030656898
 Animator:
   serializedVersion: 5
@@ -251,7 +220,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.0181818, y: 1.6727272}
+  m_Size: {x: 1.0181818, y: 1.7454545}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

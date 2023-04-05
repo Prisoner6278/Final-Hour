@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class ScreenSpriteSort : MonoBehaviour
 {
-    public SpriteRenderer[] nonTreeSprites;
-    SpriteRenderer[] treeTrunkSprites;
+    public SpriteRenderer[] sprites;
 
     GameObject player;
     private bool activeScreen;
@@ -17,20 +16,19 @@ public class ScreenSpriteSort : MonoBehaviour
         // get prop sprites
         List<GameObject> spriteSortProps = new List<GameObject>();
 
-        foreach (Transform t in transform)
+        Transform objects = transform.Find("Objects");
+        foreach (Transform t in objects)
         {
-            if (t.tag == "SpriteSortProp")
-                spriteSortProps.Add(t.gameObject);
+            foreach (Transform t2 in t)
+            {
+                if (t2.tag == "SpriteSortProp")
+                    spriteSortProps.Add(t2.gameObject);
+            }
         }
 
-        nonTreeSprites = new SpriteRenderer[spriteSortProps.Count];
+        sprites = new SpriteRenderer[spriteSortProps.Count];
         for (int i = 0; i < spriteSortProps.Count; i++)
-            nonTreeSprites[i] = spriteSortProps[i].GetComponent<SpriteRenderer>();
-        // get tree trunk sprites
-        GameObject[] spriteSortTreeTrunks = GameObject.FindGameObjectsWithTag("SpriteSortTreeTrunk");
-        treeTrunkSprites = new SpriteRenderer[spriteSortTreeTrunks.Length];
-        for (int i = 0; i < treeTrunkSprites.Length; i++)
-            treeTrunkSprites[i] = spriteSortTreeTrunks[i].GetComponent<SpriteRenderer>();
+            sprites[i] = spriteSortProps[i].GetComponent<SpriteRenderer>();
 
         // get player
         player = GameObject.FindGameObjectWithTag("Player");
@@ -48,7 +46,7 @@ public class ScreenSpriteSort : MonoBehaviour
         if (activeScreen)
         {
             // props
-            foreach (SpriteRenderer s in nonTreeSprites)
+            foreach (SpriteRenderer s in sprites)
             {
                 // behind player
                 if (s.transform.parent.position.y > player.transform.position.y && s.sortingLayerName != "EnvironmentBack")
@@ -56,22 +54,6 @@ public class ScreenSpriteSort : MonoBehaviour
                 // in front
                 else if (s.transform.parent.position.y <= player.transform.position.y && s.sortingLayerName != "EnvironmentFront")
                     s.sortingLayerName = "EnvironmentFront";
-            }
-            // trees
-            foreach (SpriteRenderer s in treeTrunkSprites)
-            {
-                // behind player
-                if (s.gameObject.transform.position.y > player.transform.position.y && s.sortingLayerName != "EnvironmentBack")
-                {
-                    foreach (SpriteRenderer sprite in s.transform.parent.GetComponentsInChildren<SpriteRenderer>())
-                        sprite.sortingLayerName = "EnvironmentBack";
-                }
-                // in front
-                else if (s.gameObject.transform.position.y <= player.transform.position.y && s.sortingLayerName != "EnvironmentFront")
-                {
-                    foreach (SpriteRenderer sprite in s.transform.parent.GetComponentsInChildren<SpriteRenderer>())
-                        sprite.sortingLayerName = "EnvironmentFront";
-                }
             }
         }
     }

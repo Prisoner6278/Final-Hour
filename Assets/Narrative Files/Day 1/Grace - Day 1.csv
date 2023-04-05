@@ -5,10 +5,9 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#grace_intro;If I only had a few more coins just to be sure!;~;~
 ~;~;#grace_intro;There has to be some around the town! I want to do it myself, but I'm not old enough.;~;~
 ~;~;#grace_intro;Mommy and Daddy won't let me leave the house.;~;~
-~;~;#grace_intro;If you bring me coins, I'll give you a present!;~;~
-~;#coins;#found_coin;You found more coins!;~;#spare_change? #grace_repeat #beach_key #coins
+~;#coins;#found_coin;You found more coins!;~;#spare_change? #grace_repeat #coins
 ~;~;#found_coin;Thank you so much, now I can make more wishes!;~;~
-~;~;#found_coin;Here's a key to the beach, my parents left it on the table at home. You're a hero!;~;~
+~;~;#found_coin;You're a hero! Everyone will be so happy when we save the world!;~;~
 ~;~;#grace_repeat;Have you found any coins? We're running out of time!;#spare_change?;~
 ~;~;#grace_repeat;My parents work at the beach, if you help me with my wishes I'll give you the spare key.;~;~
 ~;~;#after_coin;Hopefully this is enough, thanks! ;~;~

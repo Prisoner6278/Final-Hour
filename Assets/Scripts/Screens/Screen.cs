@@ -7,10 +7,9 @@ public class Screen : MonoBehaviour
 {
     ScreenAudio screenAudio;
     ScreenSpriteSort spriteSort;
-    public bool startScreen;
 
-    // Start is called before the first frame update
-    void Start()
+
+    private void Awake()
     {
         screenAudio = GetComponent<ScreenAudio>();
         spriteSort = GetComponent<ScreenSpriteSort>();
@@ -29,10 +28,7 @@ public class Screen : MonoBehaviour
             teleportLocation.GetComponent<SpriteRenderer>().enabled = false;
             teleportLocation.GetComponent<TeleportMarker>().enabled = false;
         }
-
-        if (startScreen)
-            SetToActiveScreen();
-    }
+    }  
 
     public void SetToActiveScreen()
     {

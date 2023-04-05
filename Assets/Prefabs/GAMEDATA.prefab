@@ -76,6 +76,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemListCSV: {fileID: 4900000, guid: f975be43cb0bd844698e2cd87217a0f3, type: 3}
   itemList: []
+  ItemActionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  ItemActionEnd:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!114 &3273730881707317729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -109,7 +115,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 1775c0b202e241e40b6d3ced26dec219, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1
@@ -117,7 +123,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 04ea75aa4c30bfc43a864a194964b6ef, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1
@@ -125,7 +131,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 04ea75aa4c30bfc43a864a194964b6ef, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 0.7
@@ -133,7 +139,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 125bdf89b5a11024ab0377cb3162a098, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 0.7
@@ -141,7 +147,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: ec6e7cbb94670f54687a1d8624320c36, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1
@@ -149,7 +155,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1
@@ -157,7 +163,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1
@@ -165,10 +171,42 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
     volumeVariationLow: 0
     volumeVariationHigh: 0
-    baseVolume: 1
+    baseVolume: 0.7
     pitchVariationLow: 0.1
     pitchVariationHigh: 0.1
     basePitch: 1.3
+  - name: Birds
+    clip: {fileID: 8300000, guid: 8b499a9dd40dfc243a44fef1a96eb4fa, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Woodpeckers
+    clip: {fileID: 8300000, guid: f3f6692d29dee21489739c45d2ede174, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Seabirds
+    clip: {fileID: 8300000, guid: 2b6878f3db16f6548bf820fdc8c0cd2f, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Crows
+    clip: {fileID: 8300000, guid: 406799b8eadd6fd44a93d2bef81e3f65, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
   music:
   - name: GraveyardTheme
     clip: {fileID: 8300000, guid: bd2d8cde2ca41d84ca16501e14c383fc, type: 3}

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class QuestManager : MonoBehaviour
 {
@@ -45,6 +46,8 @@ public class QuestManager : MonoBehaviour
         if (q == null)
             throw new Exception("Searched quest list for non-existant quest! Did you make a typo somewhere?\n");
         q.SetCompletion(completionStatus);
+
+        OverallQuestStatusChecks();
     }
 
     public bool CheckIfTagIsQuest(string tag)
@@ -53,6 +56,34 @@ public class QuestManager : MonoBehaviour
         if (q == null)
             return false;
         return true;
+    }
+
+    private void OverallQuestStatusChecks()
+    {
+        Quest finalQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#game_over") == 0);
+        if (finalQuest.GetCompletion())
+        {
+            StartCoroutine(EndGame());
+            return;
+        }
+
+        Quest graceQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#spare_change?") == 0);
+        Quest jamesQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#romeo_and_juliet") == 0);
+        Quest flakeQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#detective") == 0);
+        if (graceQuest.GetCompletion() && jamesQuest.GetCompletion() && flakeQuest.GetCompletion())
+            StartCoroutine(DelayedLoadScene());
+    }
+
+    private IEnumerator DelayedLoadScene()
+    {
+        yield return new WaitForSeconds(10.0f);
+        SceneManager.LoadScene("MiddleCutScene");
+    }
+
+    private IEnumerator EndGame()
+    {
+        yield return new WaitForSeconds(5.0f);
+        SceneManager.LoadScene("EndCutScene");
     }
 }
 

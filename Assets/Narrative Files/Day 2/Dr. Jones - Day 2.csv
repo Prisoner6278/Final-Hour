@@ -10,8 +10,7 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#dr.jones_intro;I wouldn't ask if it wasn't of the utmost importance . . . and I'll compensate you however you see fit. ;~;~
 ~;~;#dr.jones_intro;It should be labelled 'For Ms. Jones'. ;~;~
 ~;~;#dr.jones_intro;I fear the worst . . .;~;~
-~;~;#dr.jones_repeat;Last time this happened, a package was delivered to a house in the southern part of town.;#box;~
-~;#box;#dr.jones_after;Oh... my package. Thank you.;~;#game_over
+~;#box;#dr.jones_after;Oh... my package. Thank you.;~;#game_over #box #dr.jones_repeat
 ~;~;#dr.jones_after;I receved word back, it looks like my fears are coming true. Now time to confirm the inevitable. ;~;~
 ~;~;#dr.jones_after;Alright . . . this part goes here . . . adjust the angle elevation . . . and-;~;~
 ~;~;#dr.jones_after;Oh . . .;~;~
@@ -20,3 +19,4 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#dr.jones_after;Since this is the end, I'm at least grateful to spend these last moments doing what I love. ;~;~
 ~;~;#dr.jones_after;Even though you're young, I hope you lived a fulfulling life. ;~;~
 ~;~;#dr.jones_after;The world we know is about to vanish. Not even our memories will remain.;~;~
+~;~;#dr.jones_repeat;Last time this happened, a package was delivered to a house in the southern part of town.;#box;~

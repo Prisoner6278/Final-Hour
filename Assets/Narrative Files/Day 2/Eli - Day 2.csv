@@ -16,7 +16,7 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#elidaytwo;Now that you know what Flake is really up to, you understand why we need to end this.;~;~
 ~;~;#elidaytwo;Prove you're on our side by helping us take him down. ;~;~
 ~;~;#elidaytwo;We have to stay hidden, but you don't. Get us something to use against him. ;~;~
-~;#bug_spray;#eli_bug_spray;Bug spray? ;~;#terminixer #eli_repeat #graveyard_key
+~;#bug_spray;#eli_bug_spray;Bug spray? ;~;#terminixer #eli_repeat #bug_spray #graveyard_key
 ~;~;#eli_bug_spray;Interesting... But it'll work. ;~;~
 ~;~;#eli_bug_spray;(I know! This is gonna make him suffer!);~;~
 ~;~;#eli_bug_spray;One more thing, go tell the gravekeeper, dig a hole for one. Maybe two more for those shitheads who follow him around.;~;~
