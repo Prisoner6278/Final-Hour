@@ -136,8 +136,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2.1604, y: 34.6776}
-  m_SizeDelta: {x: 234.7396, y: 62.2858}
+  m_AnchoredPosition: {x: 0.9495, y: -9.5994}
+  m_SizeDelta: {x: 159.5951, y: 52.446}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3772486644703775060
 CanvasRenderer:
@@ -204,7 +204,7 @@ RectTransform:
   m_GameObject: {fileID: 5438612842152072203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.2728, y: 2.2728, z: 2.2728}
+  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6828337084027784279}
@@ -212,8 +212,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -24.00003}
-  m_SizeDelta: {x: 256, y: 128}
+  m_AnchoredPosition: {x: 0, y: -11}
+  m_SizeDelta: {x: 258, y: 94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &208686797147918738
 CanvasRenderer:
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3463a2c24deabee4ab05b1b0896b87ef, type: 3}
+  m_Sprite: {fileID: -1335883621, guid: 5270224ff1b86cd43a666d9870a8b603, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 61}
+  m_AnchoredPosition: {x: 0, y: 80.7}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6828337084027784278
@@ -354,7 +354,7 @@ MonoBehaviour:
   - name: '#boot'
     sprite: {fileID: 21300000, guid: fbc90c5733dce944aa08f9dd2780c69e, type: 3}
   - name: '#gps'
-    sprite: {fileID: -346186838, guid: 67ae795d5bdfcdc459e25bc46417f58f, type: 3}
+    sprite: {fileID: 1240090188, guid: fac457b4223afb043b6d881b80ecdd27, type: 3}
   - name: '#shovel'
     sprite: {fileID: -1156470559, guid: ef07bec0fb345b949b4e3f72439470e4, type: 3}
   - name: '#watch'

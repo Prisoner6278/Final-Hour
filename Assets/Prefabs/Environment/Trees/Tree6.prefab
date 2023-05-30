@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6834962256011521569}
   - component: {fileID: 4492069390474496723}
+  - component: {fileID: 3544516267549510537}
   m_Layer: 0
   m_Name: TrunkGraphics
   m_TagString: SpriteSortProp
@@ -72,7 +73,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1517391527
   m_SortingLayer: 2
-  m_SortingOrder: 1872
+  m_SortingOrder: 1867
   m_Sprite: {fileID: 533869075, guid: fe46500bf2b97ad4b82338618ebc6ebc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -84,6 +85,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3544516267549510537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3129989762699879261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9809bf1345abc5648af68b3a82653f08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_OverrideArea: 1
+  m_Area: 1
+  m_IgnoreFromBuild: 0
+  m_AffectedAgents: ffffffff
 --- !u!1 &3466517031655128193
 GameObject:
   m_ObjectHideFlags: 0
@@ -219,7 +236,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1517391527
   m_SortingLayer: 2
-  m_SortingOrder: 1872
+  m_SortingOrder: 1867
   m_Sprite: {fileID: 21300000, guid: af9f10945bcbb844cad1d61902f832e4, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

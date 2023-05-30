@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
+using UnityEngine.SceneManagement;
 
 public class ItemManager : MonoBehaviour
 {
@@ -10,12 +11,18 @@ public class ItemManager : MonoBehaviour
     [SerializeField]
     private Item[] itemList;
     private InventoryItems inventoryUI;
+    private GameObject clockCanvas;
 
     public UnityEvent ItemActionStart;
     public UnityEvent ItemActionEnd;
 
     // singleton
     private static ItemManager instance;
+
+    public static ItemManager Instance()
+    {
+        return instance;
+    }
 
     private void Awake()
     {
@@ -29,14 +36,16 @@ public class ItemManager : MonoBehaviour
             throw new Exception("Searched for Inventory Canvas Items child and couldn't find it in the scene.\n");
     }
 
-    public static ItemManager Instance()
+    private void Start()
     {
-        return instance;
-    }
+        // has to happen after time text setup in timemanager
+        clockCanvas = GameObject.Find("ClockCanvas");
+        if (clockCanvas == null)
+            throw new Exception("couldn't find ClockCanvas, is it added to the scene?");
 
-    // Start is called before the first frame update
-    void Start()
-    {
+        if (SceneManager.GetActiveScene().name != "Day2Scene")
+            clockCanvas.SetActive(false); // turn off clock UI until player picks up watch
+
         itemList = CSVReader.ReadItemListCSV(itemListCSV);
     }
 
@@ -65,6 +74,12 @@ public class ItemManager : MonoBehaviour
     // update inventory UI
     private IEnumerator InventoryUpdate(bool taking, string itemName)
     {
+        if (itemName == "#watch")
+        {
+            clockCanvas.SetActive(true);
+            yield break;
+        }
+
         // open inventory UI
         ItemActionEnd.RemoveAllListeners(); // reset
         ItemActionStart.Invoke();
@@ -78,6 +93,8 @@ public class ItemManager : MonoBehaviour
             inventoryUI.RemoveItem(itemName);
 
         yield return new WaitForSeconds(0.7f);
+
+
 
         ItemActionEnd.Invoke();
     }

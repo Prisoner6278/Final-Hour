@@ -1,10 +1,18 @@
 Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
-~;~;#rune_intro;Not many people come up to this side of town.;~;~
-~;~;#rune_intro;Eli sent you? Haven't heard that name in a while . . .;~;~
-~;~;#rune_intro;Sorry, I got my hands full.;~;~
+~;#shovel;#already_shovel;That's a nice shovel you have, almost looks like mine.;~;#rune_intro #rune_after_shovel #rune_need_shovel #shovel
+~;~;#already_shovel;Well actually, that is mine. Huh. Where'd you find it? ;~;~
+~;~;#already_shovel;Next to the train tunnel? I wonder how it ended up there. . .;~;~
+~;~;#already_shovel;Well if I had my shovel I could start working right now, I got a few graves to dig. But it's finders keepers.;~;~
+~;~;#already_shovel;Ah. . . You're giving it to me. . . How thoughtful. . .;~;~
+~;~;#already_shovel;Guess my day off is ending early.;~;~
+~;~;#rune_intro;Not many people come up to this side of town.;~;#already_shovel #already_repeat
+~;~;#rune_intro;Eli gave you the key here? How the hell did he get one? Haven't heard that name in a while . . .;~;~
+~;~;#rune_intro;Well, today I got my hands full. ;~;~
 ~;~;#rune_intro;Got the news this morning. Looks like it's three graves today, two kids and their caretaker.;~;~
 ~;~;#rune_intro;I gotta get to work, but I lost my shovel. ;~;~
 ~;#shovel;#rune_after_shovel;Oh . . . you have my shovel . . .;~;#keeper_of_the_dead #rune_need_shovel #shovel
 ~;~;#rune_after_shovel;Guess my day off is ending early.;~;~
-~;~;#rune_need_shovel;Gravedigging is hard on the psyche. Without a shovel I guess I don't need to put myself through it for now.;#shovel;~
+~;~;#rune_need_shovel;Gravedigging is hard on the psyche. Without a shovel I guess I don't need to put myself through it for now.;#keeper_of_the_dead;~
+~;~;#already_repeat;I'm getting too old for this . . .;~;~
+~;~;#already_repeat;Got the news this morning. Looks like it's three graves today, two kids and their caretaker.;~;~
 ~;~;#rune_repeat;This job doesn't get any easier with age. ;~;~

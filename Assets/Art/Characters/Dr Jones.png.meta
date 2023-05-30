@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0cade912cbb134c4bbd913dc8c170c5b
+guid: f8972d064fe77944793cef546d9bbb88
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 220
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -106,7 +106,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -120,10 +120,10 @@ TextureImporter:
       name: Dr Jones_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 512
-        width: 224
-        height: 384
+        x: 1
+        y: 70
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 797f2ed7a7d18464ba04efe17e7319d4
-      internalID: -1451875495
+      spriteID: 65a7d7ea820a91f4ba082d54dad33d50
+      internalID: 2036157820
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: Dr Jones_1
       rect:
         serializedVersion: 2
-        x: 272
-        y: 512
-        width: 224
-        height: 384
+        x: 33
+        y: 71
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e57b8ad2fc00a240a849d848991b28c
-      internalID: -195878
+      spriteID: 1af28c1309f8e604d94cba4cbaee23be
+      internalID: -1564095073
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: Dr Jones_2
       rect:
         serializedVersion: 2
-        x: 528
-        y: 512
-        width: 224
-        height: 384
+        x: 65
+        y: 72
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a5db5ea549fb8e469f46fa9ecabe197
-      internalID: 1600528318
+      spriteID: b48a7d08525672f458387f9a0451d2a0
+      internalID: 1454562683
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: Dr Jones_3
       rect:
         serializedVersion: 2
-        x: 784
-        y: 512
-        width: 224
-        height: 384
+        x: 97
+        y: 71
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 883b4e674420bf745957c78f22f2a060
-      internalID: -377064265
+      spriteID: 581e8873525fcb944b820d107171b254
+      internalID: 574540343
       vertices: []
       indices: 
       edges: []
@@ -204,10 +204,10 @@ TextureImporter:
       name: Dr Jones_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 224
-        height: 384
+        x: 1
+        y: 6
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,8 +215,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 339e60c89bdbf6d4d994acc3ce129b1a
-      internalID: -990317917
+      spriteID: 0a04104481c09d74684fc9e6996e254b
+      internalID: 710451551
       vertices: []
       indices: 
       edges: []
@@ -225,10 +225,10 @@ TextureImporter:
       name: Dr Jones_5
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 224
-        height: 384
+        x: 33
+        y: 7
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18f54ac630af05a4dae63ad9da9348c5
-      internalID: -985555854
+      spriteID: be64493d496344e4998ee496babceec1
+      internalID: 113262021
       vertices: []
       indices: 
       edges: []
@@ -246,10 +246,10 @@ TextureImporter:
       name: Dr Jones_6
       rect:
         serializedVersion: 2
-        x: 528
-        y: 0
-        width: 224
-        height: 384
+        x: 65
+        y: 8
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e243bd7dc55494447bbfd56a760583f6
-      internalID: 1243908182
+      spriteID: f34787aa2b861cd4b9463b1f9c3bd58a
+      internalID: 2140883927
       vertices: []
       indices: 
       edges: []
@@ -267,10 +267,10 @@ TextureImporter:
       name: Dr Jones_7
       rect:
         serializedVersion: 2
-        x: 784
-        y: 0
-        width: 224
-        height: 384
+        x: 97
+        y: 7
+        width: 30
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +278,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51d49f748d52e63449a3fdd3b6683436
-      internalID: -1637539130
+      spriteID: 4e957977e89c03a448c1604759047431
+      internalID: 1288517195
       vertices: []
       indices: 
       edges: []
@@ -295,14 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Dr Jones_5: -985555854
-      Dr Jones_1: -195878
-      Dr Jones_0: -1451875495
-      Dr Jones_4: -990317917
-      Dr Jones_3: -377064265
-      Dr Jones_2: 1600528318
-      Dr Jones_6: 1243908182
-      Dr Jones_7: -1637539130
+      Dr Jones_5: 113262021
+      Dr Jones_1: -1564095073
+      Dr Jones_0: 2036157820
+      Dr Jones_4: 710451551
+      Dr Jones_3: 574540343
+      Dr Jones_2: 1454562683
+      Dr Jones_6: 2140883927
+      Dr Jones_7: 1288517195
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

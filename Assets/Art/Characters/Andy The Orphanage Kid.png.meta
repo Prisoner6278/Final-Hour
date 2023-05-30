@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8e0320ad407b0aa48b98aad3616bd35f
+guid: 1c383ab88c16dc8459b114293f8a5cd4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,18 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,19 +108,19 @@ TextureImporter:
       name: Andy The Orphanage Kid_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 0
-        width: 144
-        height: 208
+        x: 6
+        y: 2
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cc8a81778b14144289c34ba97bd3369
-      internalID: -501823195
+      spriteID: e296fb2899a4be1419158d1c2af6a4ed
+      internalID: -1903085624
       vertices: []
       indices: 
       edges: []
@@ -141,19 +129,19 @@ TextureImporter:
       name: Andy The Orphanage Kid_1
       rect:
         serializedVersion: 2
-        x: 312
-        y: 0
-        width: 144
-        height: 208
+        x: 38
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4825fa0248d65614783eb1c8b61be6a3
-      internalID: -1427443616
+      spriteID: de6f48aff9f8e794b8a3b8a70cce7fd8
+      internalID: -1520879151
       vertices: []
       indices: 
       edges: []
@@ -162,19 +150,19 @@ TextureImporter:
       name: Andy The Orphanage Kid_2
       rect:
         serializedVersion: 2
-        x: 568
-        y: 0
-        width: 144
-        height: 208
+        x: 70
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c5957aa195da1454cb1176a04492b2eb
-      internalID: 1857048109
+      spriteID: c2de32d90014b924a80ab394ba0965bb
+      internalID: -926890907
       vertices: []
       indices: 
       edges: []
@@ -183,19 +171,19 @@ TextureImporter:
       name: Andy The Orphanage Kid_3
       rect:
         serializedVersion: 2
-        x: 824
-        y: 0
-        width: 144
-        height: 208
+        x: 102
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7fcfa4cfa65eef34f8730c51ec4e19d3
-      internalID: 608803252
+      spriteID: 48e01d8f1dcf7624f8ba68b7bb5e24a9
+      internalID: -1115768339
       vertices: []
       indices: 
       edges: []
@@ -211,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Andy The Orphanage Kid_1: -1427443616
-      Andy The Orphanage Kid_3: 608803252
-      Andy The Orphanage Kid_0: -501823195
-      Andy The Orphanage Kid_2: 1857048109
+      Andy The Orphanage Kid_1: -1520879151
+      Andy The Orphanage Kid_3: -1115768339
+      Andy The Orphanage Kid_0: -1903085624
+      Andy The Orphanage Kid_2: -926890907
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -9,6 +9,7 @@ public class QuestManager : MonoBehaviour
     public TextAsset questListCSV;
     [SerializeField]
     private Quest[] questList;
+    private TimeManager timeManager;
 
     // singleton
     private static QuestManager instance;
@@ -30,6 +31,7 @@ public class QuestManager : MonoBehaviour
     void Start()
     {
         questList = CSVReader.ReadQuestListCSV(questListCSV);
+        timeManager = GetComponent<TimeManager>();
     }
 
     public bool GetQuestCompletion(string questID)
@@ -48,6 +50,7 @@ public class QuestManager : MonoBehaviour
         q.SetCompletion(completionStatus);
 
         OverallQuestStatusChecks();
+        timeManager.AddTime();
     }
 
     public bool CheckIfTagIsQuest(string tag)

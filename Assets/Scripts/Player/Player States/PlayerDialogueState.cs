@@ -15,7 +15,6 @@ public class PlayerDialogueState : PlayerState
     {
         base.Entry();
         controller.movement.LockMovement();
-        AudioManager.Instance().PlaySound("DialogueBoxOpen");
     }
 
     // called when leaving this state
@@ -37,7 +36,6 @@ public class PlayerDialogueState : PlayerState
 
     private void FinishedDialogue()
     {
-        AudioManager.Instance().PlaySound("DialogueBoxClose");
         ChangeState(StateChangeInstruction.ChangeToRoam);
     }
 

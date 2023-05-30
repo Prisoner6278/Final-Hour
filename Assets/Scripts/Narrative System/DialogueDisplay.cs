@@ -59,8 +59,15 @@ public class DialogueDisplay : MonoBehaviour
         {
             if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Mouse0))
             {
+                Debug.Log("next text");
                 if (typing)
+                {
                     counter = dialogueText.textInfo.characterCount - 1;
+
+                    // make sure to play noise when skipping to end of dialogue
+                    if ((counter + 1)% 2 != 0)
+                        AudioManager.Instance().PlaySound(currentConvo.GetVoiceSoundName());
+                }
                 else
                     ShowNextLine();
             }
@@ -126,7 +133,7 @@ public class DialogueDisplay : MonoBehaviour
 
     public void ActivateDisplay(DialogueConversation convo, string portraitAnimatorPath)
     {
-        active = true;
+        Debug.Log("activatign text display");
         lineIndex = 0;
         currentConvo = convo;
         //if (convo.GetCharacterName() == "")
@@ -147,6 +154,7 @@ public class DialogueDisplay : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         dialogueText.gameObject.SetActive(true);
         ShowNextLine();
+        active = true;
     }
 
     private void ShowNextLine()
@@ -154,7 +162,6 @@ public class DialogueDisplay : MonoBehaviour
         if (currentConvo.GetDialogueLines().Length - 1 < lineIndex)
         {
             CloseDisplay();
-            OnDialogueCompletion.Invoke();
             return;
         }
 
@@ -179,6 +186,7 @@ public class DialogueDisplay : MonoBehaviour
         background.GetComponent<Animator>().SetBool("open", false);
         dialogueText.gameObject.SetActive(false);
         active = false;
+        AudioManager.Instance().PlaySound("DialogueBoxClose");
         StartCoroutine(DelayedClose());
     }
 
@@ -186,5 +194,6 @@ public class DialogueDisplay : MonoBehaviour
     {
         yield return new WaitForSeconds(0.4f);
         background.gameObject.SetActive(false);
+        OnDialogueCompletion.Invoke();
     }
 }

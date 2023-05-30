@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using UnityEditor;
+using UnityEngine.AI;
 
 public class NPCDialogueManager : MonoBehaviour
 {
@@ -49,6 +50,9 @@ public class NPCDialogueManager : MonoBehaviour
         // send to dialogue display
         DialogueDisplay.Instance().OnDialogueCompletion.AddListener(ConversationCompleted);
         DialogueDisplay.Instance().ActivateDisplay(currentConvo, portraitAnimatorPath);
+
+        if (GetComponent<NavMeshAgent>() != null)
+            GetComponent<NavMeshAgent>().isStopped = true;
     }
 
     // triggered by dialogue display event
@@ -72,6 +76,15 @@ public class NPCDialogueManager : MonoBehaviour
 
         currentConvo.SetReadStatus(true);
         DialogueDisplay.Instance().OnDialogueCompletion.RemoveListener(ConversationCompleted);
+
+        StartCoroutine(DelayedNavAgent());
+    }
+
+    IEnumerator DelayedNavAgent()
+    {
+        yield return new WaitForSeconds(2.0f);
+        if (GetComponent<NavMeshAgent>() != null)
+            GetComponent<NavMeshAgent>().isStopped = false;
     }
 
     private bool QuestRequirementsMet(string[] requirements)

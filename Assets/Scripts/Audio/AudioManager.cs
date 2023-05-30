@@ -33,6 +33,7 @@ public class AudioManager : MonoBehaviour
         musicSource = gameObject.AddComponent<AudioSource>();
         musicSource.volume = 0.0f;
         musicSource.loop = true;
+        musicSource.enabled = false;
 
         musicFadingIn = false;
         musicFadingout = false;

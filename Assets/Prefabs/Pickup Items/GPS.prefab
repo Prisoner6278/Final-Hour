@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6372688263113904153}
   - component: {fileID: 6372688263113904152}
   - component: {fileID: 6372688263113904150}
+  - component: {fileID: 6814989842881043904}
   m_Layer: 0
   m_Name: GPS
   m_TagString: Item
@@ -75,6 +76,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &6814989842881043904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6372688263113904155}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301d5d489d3e0894883b323052e665b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMat: {fileID: 2100000, guid: 59673c06dc0ba724eb694925c35ef958, type: 2}
+  defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 6372688263122573221}
 --- !u!1 &6372688263122573223
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,8 +164,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -346186838, guid: 67ae795d5bdfcdc459e25bc46417f58f, type: 3}
-  m_Color: {r: 1, g: 0.96149796, b: 0.3254717, a: 1}
+  m_Sprite: {fileID: 1240090188, guid: fac457b4223afb043b6d881b80ecdd27, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

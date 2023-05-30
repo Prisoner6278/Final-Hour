@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1410bda73768a404883ecb6905d055cf
+guid: f802f92ebcf1e0c4b8b00e61d0e2d55c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,18 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,19 +108,19 @@ TextureImporter:
       name: Blake The Orphanage Kid_0
       rect:
         serializedVersion: 2
-        x: 56
-        y: 0
-        width: 144
-        height: 208
+        x: 6
+        y: 2
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 489cfee4263a94b48b00decf93d64e1a
-      internalID: -157994473
+      spriteID: d6572e0953bf6b5479e7e3aceb293daf
+      internalID: 1060177633
       vertices: []
       indices: 
       edges: []
@@ -141,19 +129,19 @@ TextureImporter:
       name: Blake The Orphanage Kid_1
       rect:
         serializedVersion: 2
-        x: 312
-        y: 0
-        width: 144
-        height: 208
+        x: 38
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d89862b5b54812240b333d6f40f8d7af
-      internalID: -265651274
+      spriteID: 2de81773c981099409d6bbad65489da4
+      internalID: 1852151296
       vertices: []
       indices: 
       edges: []
@@ -162,19 +150,19 @@ TextureImporter:
       name: Blake The Orphanage Kid_2
       rect:
         serializedVersion: 2
-        x: 568
-        y: 0
-        width: 144
-        height: 208
+        x: 70
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 282dd53d0b7582f42994667b1ccbfb9a
-      internalID: -1792081871
+      spriteID: d19f85cf93d536040b2ecd070e5b36f0
+      internalID: -1919771312
       vertices: []
       indices: 
       edges: []
@@ -183,19 +171,19 @@ TextureImporter:
       name: Blake The Orphanage Kid_3
       rect:
         serializedVersion: 2
-        x: 824
-        y: 0
-        width: 144
-        height: 208
+        x: 102
+        y: 3
+        width: 20
+        height: 28
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaef4522084f4e14caf96d6a49757543
-      internalID: 27049438
+      spriteID: bf7fef87eadf64f41b830baf9a4ecbc8
+      internalID: -875224875
       vertices: []
       indices: 
       edges: []
@@ -211,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blake The Orphanage Kid_2: -1792081871
-      Blake The Orphanage Kid_3: 27049438
-      Blake The Orphanage Kid_1: -265651274
-      Blake The Orphanage Kid_0: -157994473
+      Blake The Orphanage Kid_2: -1919771312
+      Blake The Orphanage Kid_3: -875224875
+      Blake The Orphanage Kid_1: 1852151296
+      Blake The Orphanage Kid_0: 1060177633
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

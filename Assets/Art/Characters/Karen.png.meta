@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 8ceca80ab46791244bc6dc5940fea1d3
+guid: 909ada47e7581dd419e2bbbb5055ce92
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 260
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -101,18 +101,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -120,10 +108,10 @@ TextureImporter:
       name: Karen_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 0
-        width: 240
-        height: 472
+        x: 0
+        y: 2
+        width: 32
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +119,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6bc704fe9ae12f4d9b587e5de451865
-      internalID: 653724115
+      spriteID: 31e0f7e13275ee64998d6a61b3e70ee4
+      internalID: 1590366850
       vertices: []
       indices: 
       edges: []
@@ -141,10 +129,10 @@ TextureImporter:
       name: Karen_1
       rect:
         serializedVersion: 2
-        x: 264
-        y: 0
-        width: 240
-        height: 472
+        x: 32
+        y: 2
+        width: 32
+        height: 61
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +140,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5ff52c1a8602d1345aa590f07c7e5455
-      internalID: 1611564967
+      spriteID: 5c256d96e1578ed44a779bbf5d22b450
+      internalID: 1850078878
       vertices: []
       indices: 
       edges: []
@@ -162,10 +150,10 @@ TextureImporter:
       name: Karen_2
       rect:
         serializedVersion: 2
-        x: 520
-        y: 0
-        width: 240
-        height: 472
+        x: 64
+        y: 3
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ff77139373d1e3418ed96807b2fd163
-      internalID: 1359138916
+      spriteID: f431c022d3f9cee489790c3799421e98
+      internalID: -1523700801
       vertices: []
       indices: 
       edges: []
@@ -183,10 +171,10 @@ TextureImporter:
       name: Karen_3
       rect:
         serializedVersion: 2
-        x: 776
-        y: 0
-        width: 240
-        height: 472
+        x: 96
+        y: 2
+        width: 32
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6134f8d340e20247999ec0860e47020
-      internalID: 1328187021
+      spriteID: c1e4db6fc41714b428d5a6c8b4483760
+      internalID: 1908614385
       vertices: []
       indices: 
       edges: []
@@ -211,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Karen_2: 1359138916
-      Karen_0: 653724115
-      Karen_3: 1328187021
-      Karen_1: 1611564967
+      Karen_2: -1523700801
+      Karen_0: 1590366850
+      Karen_3: 1908614385
+      Karen_1: 1850078878
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

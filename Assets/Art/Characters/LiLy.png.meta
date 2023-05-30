@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4d26737a90461334285987fbca9f8fc3
+guid: 6b29e0bbbd869fc4b8259072881c6049
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 300
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,10 +120,10 @@ TextureImporter:
       name: LiLy_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 224
-        height: 464
+        x: 1
+        y: 1
+        width: 30
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 842c95ef22043d049a1746f6b7e8e5ed
-      internalID: 1810560340
+      spriteID: b56b75f00379e76498d91981403f7385
+      internalID: 1576569446
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: LiLy_1
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 224
-        height: 464
+        x: 33
+        y: 2
+        width: 30
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbeb3852f8bf494682d78fe8916401e
-      internalID: -189145677
+      spriteID: 8739b4e6a59ca7e4eb43043dc17e06e1
+      internalID: -1565014904
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: LiLy_2
       rect:
         serializedVersion: 2
-        x: 528
-        y: 0
-        width: 224
-        height: 464
+        x: 65
+        y: 2
+        width: 30
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4aed905438360c34692cd62f190c4124
-      internalID: -645674296
+      spriteID: d6a383a165cf4f046bb98d326b68ad07
+      internalID: -1751960937
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: LiLy_3
       rect:
         serializedVersion: 2
-        x: 784
-        y: 0
-        width: 224
-        height: 464
+        x: 97
+        y: 2
+        width: 30
+        height: 60
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51334b29c325d2d4595792ec244a217c
-      internalID: -754914962
+      spriteID: e85e9c4700681284aa5860287a2e421d
+      internalID: 1820371107
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      LiLy_2: -645674296
-      LiLy_3: -754914962
-      LiLy_0: 1810560340
-      LiLy_1: -189145677
+      LiLy_2: -1751960937
+      LiLy_3: 1820371107
+      LiLy_0: 1576569446
+      LiLy_1: -1565014904
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

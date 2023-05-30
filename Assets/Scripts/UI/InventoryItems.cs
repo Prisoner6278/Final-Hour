@@ -11,9 +11,9 @@ public class InventoryItems : MonoBehaviour
 
     // every 120 units on x
     private List<GameObject> itemImages;
-    private float firstValueX = -195.0f;
-    private float firstValueY = 35.0f;
-    private float itemSpacingDistance = 120.0f;
+    private float firstValueX = -134.0f;
+    private float firstValueY = -10.0f;
+    private float itemSpacingDistance = 66.0f;
 
     // Start is called before the first frame update
     void Start()

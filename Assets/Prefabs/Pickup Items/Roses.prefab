@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5497876928639315033}
   - component: {fileID: 5497876928639315032}
   - component: {fileID: 5497876928639315030}
+  - component: {fileID: 417769764550684095}
   m_Layer: 0
   m_Name: Roses
   m_TagString: Item
@@ -48,6 +49,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: '#roses'
   pickupText: You found the roses!
+  portraitAnimatorPath: 
 --- !u!61 &5497876928639315030
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74,6 +76,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &417769764550684095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5497876928639315035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301d5d489d3e0894883b323052e665b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMat: {fileID: 2100000, guid: 59673c06dc0ba724eb694925c35ef958, type: 2}
+  defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 5497876928646933477}
 --- !u!1 &5497876928646933479
 GameObject:
   m_ObjectHideFlags: 0

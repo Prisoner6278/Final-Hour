@@ -9,6 +9,10 @@ TagManager:
   - Item
   - SpriteSortProp
   - SpriteSortTreeTrunk
+  - BeachGate
+  - Lamp
+  - Building
+  - CutSceneCanvas
   layers:
   - Default
   - TransparentFX

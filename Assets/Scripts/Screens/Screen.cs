@@ -24,7 +24,9 @@ public class Screen : MonoBehaviour
             GameObject teleportLocation = boundary.transform.Find("TeleportMarker").gameObject;
             if (teleportLocation == null)
                 throw new Exception("Screen boundary wasn't able to find child TeleportMarker");
-            boundary.GetComponent<SpriteRenderer>().enabled = false;
+
+            if (boundary.GetComponent<SpriteRenderer>() != null)
+                boundary.GetComponent<SpriteRenderer>().enabled = false;
             teleportLocation.GetComponent<SpriteRenderer>().enabled = false;
             teleportLocation.GetComponent<TeleportMarker>().enabled = false;
         }

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8164235915098403286}
   - component: {fileID: 6890350465888764135}
   - component: {fileID: 2614562435072138099}
+  - component: {fileID: 5382431274279103034}
   m_Layer: 0
   m_Name: Boot
   m_TagString: Item
@@ -127,3 +128,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.43716383, y: 0.5797046}
   m_EdgeRadius: 0
+--- !u!114 &5382431274279103034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7620792010082690733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 301d5d489d3e0894883b323052e665b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMat: {fileID: 2100000, guid: 59673c06dc0ba724eb694925c35ef958, type: 2}
+  defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  sprite: {fileID: 8164235915098403286}

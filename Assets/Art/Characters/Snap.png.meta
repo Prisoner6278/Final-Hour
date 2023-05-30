@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 778ef10a68cfa5b4d8de25bfdbd6c752
+guid: bd9ae066f502eaf43ab09365e533bd2c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 160
+  spritePixelsToUnits: 20
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,10 +120,10 @@ TextureImporter:
       name: Snap_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 0
-        width: 224
-        height: 440
+        x: 1
+        y: 7
+        width: 30
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e12e288695fe63447aa3344480754b28
-      internalID: 72613612
+      spriteID: eaae16d8f8e404643b62f890d535d187
+      internalID: 229188707
       vertices: []
       indices: 
       edges: []
@@ -141,10 +141,10 @@ TextureImporter:
       name: Snap_1
       rect:
         serializedVersion: 2
-        x: 272
-        y: 0
-        width: 224
-        height: 440
+        x: 33
+        y: 7
+        width: 30
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89169430db7c92a4eb28daac06a4ff11
-      internalID: -2056735085
+      spriteID: e09d7e990cf7e09479cbf473a42587d8
+      internalID: -2056404065
       vertices: []
       indices: 
       edges: []
@@ -162,10 +162,10 @@ TextureImporter:
       name: Snap_2
       rect:
         serializedVersion: 2
-        x: 528
-        y: 0
-        width: 224
-        height: 440
+        x: 65
+        y: 8
+        width: 30
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,8 +173,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca9e17e0517a3f54ea93a9082d42bee6
-      internalID: 951859245
+      spriteID: 985f48ab93711b944aa721eb8ecb1095
+      internalID: 1013704688
       vertices: []
       indices: 
       edges: []
@@ -183,10 +183,10 @@ TextureImporter:
       name: Snap_3
       rect:
         serializedVersion: 2
-        x: 784
-        y: 0
-        width: 224
-        height: 440
+        x: 97
+        y: 7
+        width: 30
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,8 +194,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6db074fca7f8db442a07d97163e3a2e9
-      internalID: -912585144
+      spriteID: ecd15730218b41b4caee7bc50672360f
+      internalID: -1056364232
       vertices: []
       indices: 
       edges: []
@@ -211,10 +211,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Snap_3: -912585144
-      Snap_1: -2056735085
-      Snap_2: 951859245
-      Snap_0: 72613612
+      Snap_3: -1056364232
+      Snap_1: -2056404065
+      Snap_2: 1013704688
+      Snap_0: 229188707
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
