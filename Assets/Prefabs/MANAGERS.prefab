@@ -1,0 +1,276 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8821192970544286392
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8821192970544286394}
+  - component: {fileID: 8821192970544286395}
+  - component: {fileID: 4045637137698435591}
+  - component: {fileID: 482253131253787886}
+  - component: {fileID: 1864403641038517675}
+  - component: {fileID: 3273730881707317729}
+  m_Layer: 0
+  m_Name: MANAGERS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8821192970544286394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8821192970544286395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34831ae8149cc9a42a9167f6d6ff38c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  screenSpacingDistance: 3
+--- !u!114 &4045637137698435591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f65b266af63ba547b76a138a0163663, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questListCSV: {fileID: 4900000, guid: 5c221448e6b43594598bede57e2490c2, type: 3}
+  questList: []
+--- !u!114 &482253131253787886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba6762309960d649b9d47bd4010b81d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  minuteIncreasePerQuest: 150
+  startTimeHour: 1
+--- !u!114 &1864403641038517675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13ebd330fff2fb341ac860ec48db350b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemListCSV: {fileID: 4900000, guid: f975be43cb0bd844698e2cd87217a0f3, type: 3}
+  itemList: []
+  ItemActionStart:
+    m_PersistentCalls:
+      m_Calls: []
+  ItemActionEnd:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &3273730881707317729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8821192970544286392}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88e64e9c980c49b4ab0d1675070faff9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: DialogueBoxOpen
+    clip: {fileID: 8300000, guid: 3c2d618e73b72b6449a5d40811e9d0d1, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: DialogueBoxClose
+    clip: {fileID: 8300000, guid: f9b791e125162f242bfa1ed82e0f5992, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: DialogueSoundNormal
+    clip: {fileID: 8300000, guid: 1775c0b202e241e40b6d3ced26dec219, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: DialogueSoundDeep
+    clip: {fileID: 8300000, guid: 04ea75aa4c30bfc43a864a194964b6ef, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: DialogueSoundSuperDeep
+    clip: {fileID: 8300000, guid: 04ea75aa4c30bfc43a864a194964b6ef, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 0.7
+  - name: DialogueSoundSpace
+    clip: {fileID: 8300000, guid: 125bdf89b5a11024ab0377cb3162a098, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 0.7
+  - name: DialogueSoundWeird
+    clip: {fileID: 8300000, guid: ec6e7cbb94670f54687a1d8624320c36, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: DialogueSoundMedium
+    clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: DialogueSoundFroggy
+    clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: DialogueSoundHigh
+    clip: {fileID: 8300000, guid: 525548e77ca75fa42ab5c172d08b9739, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1.3
+  - name: Birds
+    clip: {fileID: 8300000, guid: 8b499a9dd40dfc243a44fef1a96eb4fa, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Woodpeckers
+    clip: {fileID: 8300000, guid: f3f6692d29dee21489739c45d2ede174, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Seabirds
+    clip: {fileID: 8300000, guid: 2b6878f3db16f6548bf820fdc8c0cd2f, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: Crows
+    clip: {fileID: 8300000, guid: 406799b8eadd6fd44a93d2bef81e3f65, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0
+    pitchVariationHigh: 0
+    basePitch: 1
+  - name: FootStep1
+    clip: {fileID: 8300000, guid: 80d2e11991611b84d8c2d286c3e2f160, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: FootStep2
+    clip: {fileID: 8300000, guid: d7066cdeee65a3646ae50e3c7f9e53a8, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 1
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: FootStep3
+    clip: {fileID: 8300000, guid: 18a302caf80bc4845ae74c4c88846ca1, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  - name: FootStep4
+    clip: {fileID: 8300000, guid: 190189ecab93dc04d98e5c2975c54c12, type: 3}
+    volumeVariationLow: 0
+    volumeVariationHigh: 0
+    baseVolume: 0.7
+    pitchVariationLow: 0.1
+    pitchVariationHigh: 0.1
+    basePitch: 1
+  music:
+  - name: GraveyardTheme
+    clip: {fileID: 8300000, guid: bd2d8cde2ca41d84ca16501e14c383fc, type: 3}
+  - name: OrphanageTheme
+    clip: {fileID: 8300000, guid: f6bec61a8aeec0a4fa0c43c253d559b5, type: 3}
+  - name: StartMenuTheme
+    clip: {fileID: 8300000, guid: 0089175c94e6d2141b8b86785c30c287, type: 3}
+  - name: StoreTheme
+    clip: {fileID: 8300000, guid: 2eb92bb2a18c19148af9ae6ba9650730, type: 3}
+  - name: TownTheme
+    clip: {fileID: 8300000, guid: 8f9f359b12bda8244a93a290b7442078, type: 3}
+  - name: SewerTheme
+    clip: {fileID: 8300000, guid: c5bfd695a8220c14eb27c0859a7377b0, type: 3}
+  - name: NewscastTheme
+    clip: {fileID: 8300000, guid: 7bde1221147fd594c853230c6573a58a, type: 3}
+  - name: SeaTheme
+    clip: {fileID: 8300000, guid: 8dd0abfdf13170f4e9655a283486de49, type: 3}
+  OnFadeCompletion:
+    m_PersistentCalls:
+      m_Calls: []

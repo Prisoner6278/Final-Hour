@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#houseone;Who is it! Who's there!;~;~
+~;~;#houseone;What do you want?!;~;~
+~;~;#houseone;You're just looking around? Why the hell would you do that??;~;~
+~;~;#houseone;Get out of here before I kill you!;~;~
+~;~;#house_repeat;GET OUT!!!!!!!!!!!!;~;~

@@ -1,0 +1,9 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#curtis_intro;Oh, a visitor. I'm glad somebody is here to see me. ;~;~
+~;~;#curtis_intro;I haven't felt this much joy since my last voyage.;~;~
+~;~;#curtis_intro;To go to the moon and see the stars with my own eyes. . . That was my dream.;~;~
+~;~;#curtis_intro;I died alongside that dream when the accident occurred right in this very spot long ago.;~;~
+~;~;#curtis_intro;I refuse to abandon my ship, that's why I won't leave this place.;~;~
+~;~;#curtis_repeat;I hope to see you again soon!;~;~
+~;~;#curtis_repeat;Having a friend to talk to makes me feel more alive.;~;~
+~;~;#curtis_repeat_two;What I would give to have my life back . . .;~;~

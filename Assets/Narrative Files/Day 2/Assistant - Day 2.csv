@@ -1,0 +1,8 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#Assistant;What are you supposed to be? You a tourist?;~;~
+~;~;#Assistant;Can you please go away, I am inputting some important data-;~;~
+~;~;#Assistant;Oh. . . God damn it!;~;~
+~;~;#Assistant;I put the wrong data in the hard drive, for christ sake!;~;~
+~;~;#Assistant;Sigh. . .;~;~
+~;~;#Assistant;I'm gonna have to restart this. . .;~;~
+~;~;#Assistant_repeat;If you want to help, get out of my way, it not, get out of my way.;~;~

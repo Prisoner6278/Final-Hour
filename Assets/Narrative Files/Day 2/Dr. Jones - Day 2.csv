@@ -1,0 +1,34 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;#box;#already_box;Wait a minute, why do you have my box??;~;#game_over #box #dr.jones_intro #dr.jones_after #dr.jones_repeat
+~;~;#already_box;I see the name! Give me that!;~;~
+~;~;#already_box;Don't you know it's against the law to steal mail?;~;~
+~;~;#already_box;I've been waiting for this telescope part for days, I have to confirm my theory.;~;~
+~;~;#already_box;Now, this part goes here . . . adjust the angle elevation . . . and-;~;~
+~;~;#already_box;Oh . . . I was right. Our calculations were one day off.;~;~
+~;~;#already_box;The star just exploded . . . we're doomed . . .;~;~
+~;~;#already_box;We have less than 1 minute . . .;~;~
+~;~;#already_box;Since this is the end, I'm at least grateful to spend these last moments doing what I love. ;~;~
+~;~;#already_box;Even though you're young, I hope you lived a fulfulling life. ;~;~
+~;~;#already_box;The world we know is about to vanish. Not even our memories will remain.;~;~
+~;~;#dr.jones_intro;(I know they are wrong . . .if my calculations are correct, our time left could be tremendously short.) ;~;#already_box
+~;~;#dr.jones_intro;(The media is spewing lies! The danger hasn't passed yet! If only their optimism didn't prevent them from seeing reason) ;~;~
+~;~;#dr.jones_intro;Oh, didn't see you there! You're the delivery guy right? Where's my package? ;~;~
+~;~;#dr.jones_intro;You're not the delivery man? Damn it! That telescope part should have been here this morning!;~;~
+~;~;#dr.jones_intro;Well then what the hell are you doing here? Nobody ever comes up to this place.;~;~
+~;~;#dr.jones_intro;Never mind that, I need that package to confirm my theory. Time is of the essence.;~;~
+~;~;#dr.jones_intro;Knowing those unreliable drivers, they probably sent it to the wrong address. ;~;~
+~;~;#dr.jones_intro;I need to consult with my colleagues about this. In the mean time, can you go search for my package?;~;~
+~;~;#dr.jones_intro;I wouldn't ask if it wasn't of the utmost importance . . . and I'll compensate you however you see fit. ;~;~
+~;~;#dr.jones_intro;It should be labelled 'For Ms. Jones'. ;~;~
+~;~;#dr.jones_intro;I fear the worst . . .;~;~
+~;#box;#dr.jones_after;Oh... my package. Thank you.;~;#game_over #box #dr.jones_repeat
+~;~;#dr.jones_after;I received word back, it looks like my fears are coming true. Now time to confirm the inevitable. ;~;~
+~;~;#dr.jones_after;Alright . . . this part goes here . . . adjust the angle elevation . . . and-;~;~
+~;~;#dr.jones_after;Oh . . . I was right. Our calculations were one day off.;~;~
+~;~;#dr.jones_after;The star already exploded . . . we're doomed . . .;~;~
+~;~;#dr.jones_after;We have less than 1 minute . . .;~;~
+~;~;#dr.jones_after;Since this is the end, I'm at least grateful to spend these last moments doing what I love. ;~;~
+~;~;#dr.jones_after;Even though you're young, I hope you lived a fulfulling life. ;~;~
+~;~;#dr.jones_after;The world we know is about to vanish. Not even our memories will remain.;~;~
+~;~;#dr.jones_repeat;Last time this happened, a package was delivered to a house in the southern part of town.;#game_over;~
+~;~;#dr.jones_end;. . .;~;~

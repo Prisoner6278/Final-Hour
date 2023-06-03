@@ -1,0 +1,15 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement;Triggers
+~;~;#andy;Where you going?;~;~
+~;~;#andy;You're leaving? But what about Ms. Karen's sermon later? ;~;~
+~;~;#andy;She'll be mad if you don't do what you're told . . .;~;~
+~;~;#andy;You really are determined to leave, huh?;~;~
+~;~;#andy;As long as you're back before the sermon starts, I guess I don't care.;~;~
+~;~;#andy;You should take your watch with you when you go. Just be back before the sermon.;~;~
+~;~;#andy;She said it'll be at 9:30. It will be your fault if we get punished again!;~;~
+~;#watch;#after_watch;Be sure to come back, I don't want to get in any trouble.;~;~
+#detective #spare_change? #romeo_and_juliet;~;#end_of_the_day;Oh hey you're back! You're just in time for the sermon.;~;~
+~;~;#end_of_the_day;Wait, what do you mean you're not coming back?;~;~
+~;~;#end_of_the_day;Since this is the end, don’t you wanna stay with your family?;~;~
+~;~;#end_of_the_day;Oh. . . ;~;~
+~;~;#end_of_the_day;Well. . . I'll see you on the other side.;~;~
+~;~;#end_of_the_day;Goodbye. ;~;~

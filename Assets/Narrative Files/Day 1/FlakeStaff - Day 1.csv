@@ -1,0 +1,5 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#flakeStaff;. . . I don’t think you have enough money to afford anything here, little guy.;~;~
+~;~;#flakeStaff;Honestly, I don't care if you take anything but there's nothing to steal. Sorry bud.;~;~
+~;~;#flakeStaff;The world is ending and that asshole in the suit is still making me work.;~;~
+~;~;#flake_repeat;I hate this place. . .;~;~
