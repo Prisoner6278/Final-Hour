@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#flakeStaff_two;Oh it's you again. Guess Flake was right, huh.;~;~
+~;~;#flakeStaff_two;You know maybe it might have been best for the world to end.;~;~
+~;~;#flakeStaff_two;Then I wouldn't have to work here anymore.;~;~
+~;~;#flakeStaff_two;Stupid job and stupid manager.;~;~
+~;~;#flakeStaff_repeat;Don't be like me in the future.;~;~

@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#hibiscus;You think there’s any chance some of the species would survive this disaster?;~;~
+~;~;#hibiscus;Maybe some might survive and carry on their legacy.;~;~
+~;~;#hibiscus;How? Like the dinosaurs. Some survived and adapted.  ;~;~
+~;~;#hibiscus_repeat;It's not like the earth is going to just disappear right?;~;~
+~;~;#hibiscus_repeat;RIGHT???;~;~

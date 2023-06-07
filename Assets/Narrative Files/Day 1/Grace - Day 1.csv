@@ -1,0 +1,25 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;#coins;#already_coin;I hope I made enough wishes! I've used all of the coins in my piggy bank.;~;#spare_change? #grace_intro #found_coin #grace_repeat #coins
+~;~;#already_coin;Oh, you have some you can give me?;~;~
+~;~;#already_coin;Thank you so much, now I can make more wishes!;~;~
+~;~;#already_coin;You're a hero! Everyone will be so happy when we save the world!;~;~
+~;~;#grace_intro;I hope I made enough wishes! I've used all of the coins from my piggy bank.;~;#already_coin #already_repeat
+~;~;#grace_intro;My name is Grace and I've been throwing all of my money into the well.;~;~
+~;~;#grace_intro;I'm wishing for the world not to end.;~;~
+~;~;#grace_intro;If I only had a few more coins just to be sure!;~;~
+~;~;#grace_intro;There has to be some around the town! I want to do it myself, but I'm not old enough.;~;~
+~;~;#grace_intro;Mommy and Daddy won't let me leave the town.;~;~
+~;#coins;#found_coin;You found more coins!;~;#spare_change? #grace_repeat #coins
+~;~;#found_coin;Thank you so much, now I can make more wishes! Everyone will be so happy when we save the world!;~;~
+~;~;#found_coin;A brave adventurer like you probably isn't afraid of anything, huh?;~;~
+~;~;#found_coin;I've heard that there are some ancient stone statues around town where you can talk to fairies!;~;~
+~;~;#found_coin;I remember Daddy said there's one hidden deep in the woods, somewhere near the railroad tracks.;~;~
+~;~;#found_coin;I wanna go find it, but it's too dangerous for me to go out in the woods.;~;~
+~;~;#found_coin;Maybe if you find it, you can make a wish for us!;~;~
+~;~;#grace_repeat;Have you found any coins? We're running out of time!;#spare_change?;~
+~;~;#grace_repeat;If you find some for me I'll tell you something super secret...;~;~
+~;~;#already_repeat;I've heard that there are some ancient stone statues near this town where you can talk to fairies!;~;~
+~;~;#already_repeat;I remember Daddy said there's one hidden deep in the wood, somewhere near the railroad track.;~;~
+~;~;#already_repeat;I'd love to find that statue, but it's too dangerous for me to go out in the woods.;~;~
+~;~;#already_repeat;Maybe if you find it, you can make a wish for us!;~;~
+~;~;#after_coin;Hopefully this is enough, thanks! ;~;~

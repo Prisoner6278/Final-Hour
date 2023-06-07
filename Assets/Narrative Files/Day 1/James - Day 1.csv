@@ -1,0 +1,26 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;#roses;#already_roses;Wait! Hey man, I see that you have some roses with ya, where'd you find them?;~;#romeo_and_juliet #roses #james_intro #james_sad #roses_retrieved
+~;~;#already_roses;You're telling me you picked the last ones? Man, I got a big favor to ask you.;~;~
+~;~;#already_roses;I need something romantic to confess to the love of my life, Lily, and time is running out.;~;~
+~;~;#already_roses;Do you think I could take those roses off your hands?;~;~
+~;~;#already_roses;Thanks! I really owe you one.;~;~
+~;~;#already_roses;. . . Not like it will matter after today.;~;~
+~;~;#already_roses;Anyways, thanks man, I got really lucky we crossed paths. I'm finally prepared to confess my love to her.;~;~
+~;~;#james_intro;Ugh. What am I going to do?!;~;#already_roses
+~;~;#james_intro;The world is ending today and I still haven't confessed my love to Lily!;~;~
+~;~;#james_intro;I should be telling her how I really feel right now . . .;~;~
+~;~;#james_intro;But I can't just go over to her empty handed!;~;~
+~;~;#james_intro;You gotta help me, please! Could you find me some roses or something?;~;~
+~;~;#james_intro;There has to be some nice ones up north of the town.;~;~
+~;~;#james_intro;I would go there myself but I need figure to out what I'm going to say.;~;~
+~;~;#james_intro;I should write a note . . . love from James . . .;~;~
+~;#roses;#roses_retrieved;You found them!;~;#romeo_and_juliet #roses #james_sad
+~;~;#roses_retrieved;I really owe you one.;~;~
+~;~;#roses_retrieved;. . . Not like it will matter after today.;~;~
+~;~;#roses_retrieved;Anyways, thanks man you really did me a huge favor here.;~;~
+~;~;#roses_retrieved;I'm finally prepared to confess my love to her.;~;~
+~;~;#james_sad;Is it even worth telling Lily how I feel with only a day left on Earth?;#romeo_and_juliet;~
+~;~;#james_sad;On the other hand, what's the worst thing that could happen?;~;~
+~;~;#james_sad;You're right! The worst thing is already happening!;~;~
+~;~;#james_sad;That settles it. Once you find some roses and I write out my thoughts, I'll go find her.;~;~
+~;~;#james_repeat;Wish me luck man!;~;~

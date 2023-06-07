@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#housetwo;Who is it? Oh I know you right?;~;~
+~;~;#housetwo;Sorry about that yesterday. Our supplies were limited so we couldn't let you in;~;~
+~;~;#housetwo;I have a family to take care of so I hope you can understand.;~;~
+~;~;#housetwo;Since this fiasco is over, I'll invite you to my family dinner as an apology, sounds good? ;~;~
+~;~;#housetwo_repeat;I'll see you at dinner then.;~;~

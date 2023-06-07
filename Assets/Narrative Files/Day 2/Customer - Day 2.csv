@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#customer_daytwo;Oh you’re the kid from the store right?;~;~
+~;~;#customer_daytwo;Yeah I thought I recognized you.;~;~
+~;~;#customer_daytwo;How did the begging go, you ask? Terrible, nobody even wanted to talk to me.;~;~
+~;~;#customer_daytwo;At least the store is restocked, now that the world isn't ending!;~;~
+~;~;#customer_daytwo_repeat;I'll give you some advice kid, don't trust anyone. ;~;~

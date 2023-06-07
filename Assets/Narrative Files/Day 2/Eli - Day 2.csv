@@ -1,0 +1,20 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#elidaytwo;Ha! The culprit Is finally awake!;~;~
+~;~;#elidaytwo;I'm only gonna ask you once, why did you destroy the orphanage?!;~;~
+~;~;#elidaytwo;You didn't?;~;~
+~;~;#elidaytwo;(I know we can't trust him, let me handle this.);~;~
+~;~;#elidaytwo;Hm. . . Well, I bet we left a good bump on your head from our trusty flashlight!;~;~
+~;~;#elidaytwo;What? What do you mean the world was supposed to end?;~;~
+~;~;#elidaytwo;Stop asking questions! We'll be the ones doing the talking!;~;~
+~;~;#elidaytwo;Flake really has reached rock bottom now that he's got kids doing his dirty work.;~;~
+~;~;#elidaytwo;First he was dumping his toxic waste into the sea, and now he had a kid destroy an orphanage. ;~;~
+~;~;#elidaytwo;Wait, you lived there? So you're not even working for him?;~;~
+~;~;#elidaytwo;Well if that's the case, I'm sorry about your friends. ;~;~
+~;~;#elidaytwo;Now that you know what Flake is really up to, you gotta help us.;~;~
+~;~;#elidaytwo;We have to stay hidden, but you don't. Can you find us something to use against him?;~;~
+~;~;#eli_repeat;We'll be here. Come find us when you have something we can use.;#bug_spray;~
+~;#bug_spray;#eli_bug_spray;Bug spray? Interesting... But it'll work. ;~;#terminixer #eli_repeat #bug_spray #graveyard_key
+~;~;#eli_bug_spray;(I know! This is gonna make him suffer!);~;~
+~;~;#eli_bug_spray;One more thing, go tell the gravekeeper, dig a hole for one. Maybe two more for those shitheads who follow him around.;~;~
+~;~;#eli_bug_spray;Here's the key to the graveyard gate. We stole it when we ran away.;~;~
+~;~;#eli_bug_spray_repeat;Your job here is done, we appreciate your efforts. Now leave the rest to us.;~;~
