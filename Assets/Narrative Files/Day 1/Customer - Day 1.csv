@@ -1,6 +1,6 @@
 Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
-~;~;#customer;Everything is gone! Canned beans . . . Sold out. Water and crackers . . . Sold out . . .;~;~
-~;~;#customer;I'm not prepared for doomsday, I need to find some food for my shelter.;~;~
+~;~;#customer;Everything is gone! Canned beans . . . sold out. Water and crackers . . . sold out . . .;~;~
+~;~;#customer;I'm not prepared for doomsday, I need to find some food for my shelter!!;~;~
 ~;~;#customer;And the idiot owner is still selling everything for full price. What a bastard!;~;~
 ~;~;#customer;Guess it's time for me to go out and beg.;~;~
-~;~;#customer_repeat;Let's hope others are more merciful. . .;~;~
+~;~;#customer_repeat;Let's hope others are more kind. . .;~;~

@@ -8,18 +8,15 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#grace_intro;I'm wishing for the world not to end.;~;~
 ~;~;#grace_intro;If I only had a few more coins just to be sure!;~;~
 ~;~;#grace_intro;There has to be some around the town! I want to do it myself, but I'm not old enough.;~;~
-~;~;#grace_intro;Mommy and Daddy won't let me leave the town.;~;~
+~;~;#grace_intro;Mommy and Daddy won't let explore past the yard, they say it's dangerous . . .;~;~
 ~;#coins;#found_coin;You found more coins!;~;#spare_change? #grace_repeat #coins
 ~;~;#found_coin;Thank you so much, now I can make more wishes! Everyone will be so happy when we save the world!;~;~
 ~;~;#found_coin;A brave adventurer like you probably isn't afraid of anything, huh?;~;~
-~;~;#found_coin;I've heard that there are some ancient stone statues around town where you can talk to fairies!;~;~
-~;~;#found_coin;I remember Daddy said there's one hidden deep in the woods, somewhere near the railroad tracks.;~;~
-~;~;#found_coin;I wanna go find it, but it's too dangerous for me to go out in the woods.;~;~
-~;~;#found_coin;Maybe if you find it, you can make a wish for us!;~;~
+~;#coins;#found_coin;You found more coins!;~;#spare_change? #grace_repeat #coins
+~;~;#found_coin;Thank you so much, now I can make more wishes! Everyone will be so happy when we save the world!;~;~
+~;~;#found_coin;A brave adventurer like you probably isn't afraid of anything, huh?;~;~
+~;~;#found_coin;I wish I was brave just like you. . .;~;~
 ~;~;#grace_repeat;Have you found any coins? We're running out of time!;#spare_change?;~
 ~;~;#grace_repeat;If you find some for me I'll tell you something super secret...;~;~
-~;~;#already_repeat;I've heard that there are some ancient stone statues near this town where you can talk to fairies!;~;~
-~;~;#already_repeat;I remember Daddy said there's one hidden deep in the wood, somewhere near the railroad track.;~;~
-~;~;#already_repeat;I'd love to find that statue, but it's too dangerous for me to go out in the woods.;~;~
-~;~;#already_repeat;Maybe if you find it, you can make a wish for us!;~;~
+~;~;#already_repeat;I wish I was brave just like you. . .;~;~
 ~;~;#after_coin;Hopefully this is enough, thanks! ;~;~

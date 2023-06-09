@@ -1,0 +1,5 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;~;#sunny_daytwo;Hey there! I saw that you took some roses yesterday. ;~;~
+~;~;#sunny_daytwo;I hope that you put them to good use.;~;~
+~;~;#sunny_daytwo;My personal favorite are sunflowers, but all flowers are beautiful.;~;~
+~;~;#sunny_repeat;Feel free to come back anytime!;~;~

@@ -1,5 +1,5 @@
 Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
-~;~;#houseone_daytwo;Knocking on the door. . .?;~;~
-~;~;#houseone_daytwo;Impossible! The world didn't end?. . .;~;~
-~;~;#houseone_daytwo;I must be hearing things or I'm dead!;~;~
-~;~;#house_repeat;SHUT UP, SHUT UP!!!!!!!!!!!;~;~
+~;~;#houseone_daytwo;I hear a knock . . . ?;~;~
+~;~;#houseone_daytwo;Impossible! The world didn't end?;~;~
+~;~;#houseone_daytwo;I must be hearing things, or I'm dead!;~;~
+~;~;#house_repeat;What the hell is going on . . .;~;~

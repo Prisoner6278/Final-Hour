@@ -1,6 +1,6 @@
 Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
-~;~;#hibiscus;You think there’s any chance some of the species would survive this disaster?;~;~
-~;~;#hibiscus;Maybe some might survive and carry on their legacy.;~;~
-~;~;#hibiscus;How? Like the dinosaurs. Some survived and adapted.  ;~;~
-~;~;#hibiscus_repeat;It's not like the earth is going to just disappear right?;~;~
-~;~;#hibiscus_repeat;RIGHT???;~;~
+~;~;#hibiscus;Sup lil' bro! World's ending soon man, life is crazy.;~;~
+~;~;#hibiscus;We're about to disappear like the dinosaurs, man.;~;~
+~;~;#hibiscus;Speaking of dinosaurs, I've been hearing sounds like there's some kinda creature nearby.;~;~
+~;~;#hibiscus;Might be a t-rex or some shit around here bro. Armageddon.;~;~
+~;~;#hibiscus_repeat;No chance I'm looking in that pipe, you should also stay away from there too bro.;~;~

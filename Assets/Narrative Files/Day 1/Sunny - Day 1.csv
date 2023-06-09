@@ -1,0 +1,6 @@
+Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
+~;#roses;#sunny_afterpicked;I saw you pick some flowers just now, you have a good eye! Roses are one of my favorites.;~;#sunny_picked #sunny_dayone #sunny_repeat
+~;~;#sunny_dayone;Hi there, you're welcome to pick some flowers in my garden! I planted them myself.;~;~
+~;~;#sunny_repeat;Some people take my flowers to the graveyard but it seems that it's closed today.;#roses;~
+~;#roses;#sunny_picked;That's a nice choice of flower, very pretty. You have a good eye!;~;~
+~;~;#sunny_repeat_after;Someone is going to be happy with those.;~;~
