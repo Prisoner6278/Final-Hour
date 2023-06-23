@@ -141,6 +141,7 @@ MonoBehaviour:
   voiceSoundName: DialogueSoundSuperDeep
   portraitAnimatorPath: CharacterPortraitAnimations/SnapsPortrait
   conversations: []
+  myScreen: {fileID: 0}
 --- !u!58 &6376932228636073394
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -301,7 +302,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2413438952185126872, guid: 14314d6170108be4692944a8bf17f95a, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2413438952185126874, guid: 14314d6170108be4692944a8bf17f95a, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2413438952185126875, guid: 14314d6170108be4692944a8bf17f95a, type: 3}
       propertyPath: m_Pivot.x

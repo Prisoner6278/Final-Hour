@@ -708,6 +708,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c8c9ac00ad25419d96a5621bac295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls: []
   boundaryDirection: 1
   screenToTransitionTo: {fileID: 0}
   soundToPlay: 
@@ -11831,6 +11834,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c8c9ac00ad25419d96a5621bac295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls: []
   boundaryDirection: 1
   screenToTransitionTo: {fileID: 0}
   soundToPlay: 
@@ -11959,6 +11965,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c8c9ac00ad25419d96a5621bac295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls: []
   boundaryDirection: 0
   screenToTransitionTo: {fileID: 0}
   soundToPlay: 
@@ -12192,6 +12201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c8c9ac00ad25419d96a5621bac295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls: []
   boundaryDirection: 1
   screenToTransitionTo: {fileID: 0}
   soundToPlay: 
@@ -12561,7 +12573,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0.24, y: 0.74}
   serializedVersion: 2
-  m_Radius: 1.7
+  m_Radius: 0.79
 --- !u!114 &714679689
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12574,6 +12586,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e9c8c9ac00ad25419d96a5621bac295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  onTeleport:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1783404783225967249}
+        m_TargetAssemblyTypeName: ManualSpotlightOverload, Assembly-CSharp
+        m_MethodName: DeactivatePlayerSpotlight
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   boundaryDirection: 1
   screenToTransitionTo: {fileID: 0}
   soundToPlay: Splash
@@ -12592,6 +12619,18 @@ MonoBehaviour:
   outlineMat: {fileID: 2100000, guid: 59673c06dc0ba724eb694925c35ef958, type: 2}
   defaultMat: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   sprite: {fileID: 474585266}
+--- !u!114 &1783404783225967249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9219911462213716024}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3c6d069afa2384ba41c29846f64aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &8006057926349144288
 PrefabInstance:
   m_ObjectHideFlags: 0

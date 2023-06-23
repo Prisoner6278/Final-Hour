@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.Events;
 
 public class ScreenBoundary : MonoBehaviour
 {
+    public UnityEvent onTeleport;
+
     public enum BoundaryDirection
     {
         Left,
@@ -69,6 +72,8 @@ public class ScreenBoundary : MonoBehaviour
         ScreenTransitionEffect.Instance().Transition(transitionAngle, screenToTransitionTo.transform.position);
         if (soundToPlay != "")
             AudioManager.Instance().PlaySound(soundToPlay);
+
+        onTeleport.Invoke();
         return output;
     }
 

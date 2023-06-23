@@ -1,5 +1,5 @@
 Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirements;Triggers
-~;#shovel;#already_shovel;That's a nice shovel you have, almost looks like mine.;~;#rune_intro #rune_after_shovel #rune_need_shovel #shovel #rune_need_shovel
+~;#shovel;#already_shovel;That's a nice shovel you have, almost looks like mine.;~;#rune_intro #rune_after_shovel #rune_need_shovel #shovel #rune_need_shovel #keeper_of_the_dead
 ~;~;#already_shovel;Well actually, that is mine. Huh. Where'd you find it? ;~;~
 ~;~;#already_shovel;Next to the train tunnel? I wonder how it ended up there. . .;~;~
 ~;~;#already_shovel;Well if I had my shovel I could start working right now, I got a few graves to dig. But it's finders keepers.;~;~

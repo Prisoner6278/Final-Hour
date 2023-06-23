@@ -95,6 +95,7 @@ GameObject:
   - component: {fileID: 4126891835233877711}
   - component: {fileID: 7098673169965965752}
   - component: {fileID: 2230882934210648263}
+  - component: {fileID: 6069918481255914685}
   - component: {fileID: 3542084550082943040}
   - component: {fileID: 2871754317494039266}
   m_Layer: 0
@@ -139,6 +140,7 @@ MonoBehaviour:
   voiceSoundName: DialogueSoundNormal
   portraitAnimatorPath: CharacterPortraitAnimations/TVAnchorPortrait
   conversations: []
+  myScreen: {fileID: 0}
 --- !u!58 &2230882934210648263
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -155,6 +157,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: -0.3}
   serializedVersion: 2
   m_Radius: 0.32
+--- !u!114 &6069918481255914685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4126891835233877705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0beddd2b05e5a1d4492d381907f41dae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &3542084550082943040
 Animator:
   serializedVersion: 5

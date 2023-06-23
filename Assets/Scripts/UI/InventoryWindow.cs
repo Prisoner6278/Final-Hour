@@ -10,7 +10,7 @@ public class InventoryWindow : MonoBehaviour, IPointerEnterHandler, IPointerExit
     bool pointerHovering;
     RectTransform rect;
     Vector3 currentPos;
-    Vector3 showingPos = new Vector3(0, -47.7f, 0); // y axis position of UI
+    Vector3 showingPos = new Vector3(0, -46.8f, 0); // y axis position of UI
     Vector3 hidingPos = new Vector3(0, 80.7f, 0);
 
     // lerp stuff

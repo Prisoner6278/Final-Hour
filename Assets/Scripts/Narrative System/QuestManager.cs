@@ -11,6 +11,8 @@ public class QuestManager : MonoBehaviour
     private Quest[] questList;
     private TimeManager timeManager;
 
+    private GameObject andyCutscene;
+
     // singleton
     private static QuestManager instance;
 
@@ -32,6 +34,10 @@ public class QuestManager : MonoBehaviour
     {
         questList = CSVReader.ReadQuestListCSV(questListCSV);
         timeManager = GetComponent<TimeManager>();
+
+        andyCutscene = GameObject.Find("AndyCutsceneTrigger");
+        if (andyCutscene != null)
+            andyCutscene.SetActive(false);
     }
 
     public bool GetQuestCompletion(string questID)
@@ -73,8 +79,8 @@ public class QuestManager : MonoBehaviour
         Quest graceQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#spare_change?") == 0);
         Quest jamesQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#romeo_and_juliet") == 0);
         Quest flakeQuest = Array.Find(questList, x => string.Compare(x.GetID(), "#detective") == 0);
-        //if (graceQuest.GetCompletion() && jamesQuest.GetCompletion() && flakeQuest.GetCompletion())
-            // do something here when all quests are complete?
+        if (graceQuest.GetCompletion() && jamesQuest.GetCompletion() && flakeQuest.GetCompletion())
+            andyCutscene.SetActive(true);
     }
 
     private IEnumerator EndGame()

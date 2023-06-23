@@ -12,9 +12,9 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#elidaytwo;Well if that's the case, I'm sorry about your friends. ;~;~
 ~;~;#elidaytwo;Now that you know what Flake is really up to, you gotta help us.;~;~
 ~;~;#elidaytwo;We have to stay hidden, but you don't. Can you find us something to use against him?;~;~
-~;~;#eli_repeat;We'll be here. Come find us when you have something we can use.;#bug_spray;~
 ~;#bug_spray;#eli_bug_spray;Bug spray? Interesting... But it'll work. ;~;#terminixer #eli_repeat #bug_spray #graveyard_key
 ~;~;#eli_bug_spray;(I know! This is gonna make him suffer!);~;~
 ~;~;#eli_bug_spray;One more thing, go tell the gravekeeper, dig a hole for one. Maybe two more for those shitheads who follow him around.;~;~
 ~;~;#eli_bug_spray;Here's the key to the graveyard gate. We stole it when we ran away.;~;~
+~;~;#eli_repeat;We'll be here. Come find us when you have something we can use.;#terminixer;~
 ~;~;#eli_bug_spray_repeat;Your job here is done, we appreciate your efforts. Now leave the rest to us.;~;~

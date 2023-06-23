@@ -25,7 +25,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 422435222649037837}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.09, z: 0}
+  m_LocalPosition: {x: 0, y: -0.9, z: 0}
   m_LocalScale: {x: 1.3499999, y: 0.9199999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -141,6 +141,7 @@ MonoBehaviour:
   voiceSoundName: DialogueSoundHigh
   portraitAnimatorPath: CharacterPortraitAnimations/DoubtfirePortrait
   conversations: []
+  myScreen: {fileID: 0}
 --- !u!58 &5081194293213885749
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -408,7 +409,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.014, y: 0.509}
+  m_AnchoredPosition: {x: 0.014, y: -0.11}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!331 &8089572357977358510

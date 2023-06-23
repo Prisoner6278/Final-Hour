@@ -11886,47 +11886,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Curtis Dell- Sound Designer
-
-    Do Hwi Lee- Lead Writer
-
-    James
-    Shipp- Programmer, Designer, Writer, Producer
-
-    Jason Zhang- Writer
-
-    Joseph
-    Kim- Writer, Additional Design
-
-    Justin Sweis- Lead Designer, Writer, Producer
-
-    Kyung
-    Jun Suh- Character Artist, UI Artist
-
-    Layla O''Malley- Composer
-
-    Madeline
-    LaPorte- QA, Environment Artist, Producer
-
-    Nathan Knudtson- Environment
-    Artist
-
-    Ryan Maxie- Lead Environment Artist, Tileset Artist
-
-    Savar
-    Sethi- Tileset Artist
-
-    
-
-    
-
-    
-
-    
-
-    
-
-'
+  m_text: "James Shipp- Programmer, Designer, Writer, Producer\r\nJustin Sweis- Lead
+    Designer, Writer, Producer\r\nRyan Maxie- Lead Environment Artist, Tileset Artist\r\nKyung
+    Jun Suh- Character Artist, UI Artist\r\nLayla O'Malley- Composer\r\nDo Hwi Lee-
+    Lead Writer\r\nCurtis Dell- Sound Designer\r\nNathan Knudtson- Environment Artist\r\nMadeline
+    LaPorte- QA, Environment Artist, Producer\r\nJason Zhang- Writer\r\nJoseph Kim-
+    Writer, Additional Design\r\nSavar Sethi- Tileset Artist \n\n\n\n\n\n\n\n\n\n\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: eecc65b26c6fda7499dad49120cb72db, type: 2}
   m_sharedMaterial: {fileID: -4383610097368169505, guid: eecc65b26c6fda7499dad49120cb72db, type: 2}

@@ -32130,6 +32130,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5357307666723963909, guid: 4c9adb333d449fc4289c15b0388bc3fe, type: 3}
+      propertyPath: portraitAnimatorPath
+      value: CharacterPortraitAnimations/SunnyPortrait
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c9adb333d449fc4289c15b0388bc3fe, type: 3}
 --- !u!4 &183984821229108872 stripped

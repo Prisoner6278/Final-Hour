@@ -56,6 +56,7 @@ MonoBehaviour:
   voiceSoundName: DialogueSoundDeep
   portraitAnimatorPath: CharacterPortraitAnimations/FlakePortrait
   conversations: []
+  myScreen: {fileID: 0}
 --- !u!58 &354856467320596885
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -69,7 +70,7 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.29}
+  m_Offset: {x: 0, y: 0.14}
   serializedVersion: 2
   m_Radius: 0.5
 --- !u!95 &4032643184905743083

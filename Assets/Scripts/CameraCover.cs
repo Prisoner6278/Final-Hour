@@ -61,6 +61,8 @@ public class CameraCover : MonoBehaviour
             }
             foreach (ActivateSpotlightPlay light in spotlights)
                 light.ActivateSpotlight();
+
+            GameObject.FindWithTag("Player").GetComponentInChildren<ActivateSpotlightPlay>().ActivateSpotlight();
         }
         else if (timeHour > 5)
         {

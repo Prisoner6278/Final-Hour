@@ -5,5 +5,5 @@ Quest Requirements;Item Requirements;Conversation ID;Dialogue;Repeat Requirement
 ~;~;#andy;You really are determined to leave, huh?;~;~
 ~;~;#andy;As long as you're back before the sermon starts, I guess I don't care.;~;~
 ~;~;#andy;You should take your watch with you when you go. Just be back before the sermon.;~;~
-~;~;#andy;She said it'll be at 9:30. It will be your fault if we get punished again!;~;~
+~;~;#andy;She said it'll be at 9:00. It will be your fault if we get punished again!;~;~
 ~;#watch;#after_watch;Be sure to come back, I don't want to get in any trouble.;~;~
